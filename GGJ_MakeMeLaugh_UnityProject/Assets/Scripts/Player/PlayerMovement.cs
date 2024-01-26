@@ -1,6 +1,8 @@
 using UnityEngine;
+using GameJam.Audio;
 using GameJam.Input;
 using FMODUnity;
+using FMOD.Studio;
 
 namespace GameJam.Player
 {
@@ -8,7 +10,7 @@ namespace GameJam.Player
 	{
 		[Header("Movement Config:")]
 		public float defaultPlayerSpeed;
-		[SerializeField] private EventReference jumpEvent;
+		[SerializeField] private EventInstance playerJumpEvent;
         [SerializeField] private float jumpHeight;
         [Space]
 		[SerializeField] private Transform groundCheckTransform;
@@ -31,7 +33,9 @@ namespace GameJam.Player
 			playerManager = GetComponent<PlayerManager>();
 			inputManager = InputManager.INPUT;
 
-			PlayerSpeed = defaultPlayerSpeed;
+            playerJumpEvent = AudioManager.Instance.CreateInstance(FMODEvents.Instance.playerJump);
+
+            PlayerSpeed = defaultPlayerSpeed;
 			Mass = playerManager.defaultMass;
 		}
 
@@ -68,7 +72,7 @@ namespace GameJam.Player
 		{
 			if (IsGrounded)
 			{
-				// play jump sound
+				playerJumpEvent.start();
 				velocity.y = Mathf.Sqrt(jumpHeight * -2f * Mass);
 			}
 		}

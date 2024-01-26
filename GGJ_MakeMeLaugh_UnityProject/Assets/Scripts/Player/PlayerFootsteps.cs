@@ -1,7 +1,9 @@
 using UnityEngine;
 using GameJam.Surfaces;
 using GameJam.Utilities;
+using GameJam.Audio;
 using FMODUnity;
+using FMOD.Studio;
 
 namespace GameJam.Player
 {
@@ -10,7 +12,7 @@ namespace GameJam.Player
 		[Header("Footsteps Config:")]
 		public float deafultTimeBetwenFootsteps;
 		[SerializeField] private LayerMask groundTypeMask;
-		[SerializeField] EventReference footstepEvent;
+		[SerializeField] EventInstance playerFootstepsEvent;
 
         private float timeBetwenFootsteps;
 		private bool overrideSurface;
@@ -22,7 +24,9 @@ namespace GameJam.Player
 		{
 			playerManager = GetComponent<PlayerManager>();
 
-			timeBetwenFootsteps = deafultTimeBetwenFootsteps;
+            playerFootstepsEvent = AudioManager.Instance.CreateInstance(FMODEvents.Instance.playerFootsteps);
+
+            timeBetwenFootsteps = deafultTimeBetwenFootsteps;
 		}
 
 		void Update()
@@ -36,7 +40,7 @@ namespace GameJam.Player
 
 			if (timeBetwenFootsteps <= 0f && playerManager.PlayerMovement.IsGrounded && !playerManager.PlayerMovement.IsOnLadder)
 			{
-				// play footsteps sound
+				playerFootstepsEvent.start();
 				timeBetwenFootsteps = deafultTimeBetwenFootsteps;
 			}
 		}

@@ -1,12 +1,15 @@
 using UnityEngine;
 using GameJam.Input;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 namespace GameJam.Player
 {
     public class PlayerManager : MonoBehaviour
     {
 		public float defaultMass;
+
+		public StudioEventEmitter PlayerAudio;
 		public CharacterController PlayerControler { get; private set; }
 		public PlayerFootsteps PlayerFootsteps { get; private set; }
 		public PlayerMovement PlayerMovement { get; private set; }
