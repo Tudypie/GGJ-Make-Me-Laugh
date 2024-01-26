@@ -33,11 +33,7 @@ namespace GameJam.Player
 			playerManager = GetComponent<PlayerManager>();
 			inputManager = InputManager.INPUT;
 
-<<<<<<< Updated upstream
             //playerJumpEvent = AudioManager.Instance.CreateInstance(FMODEvents.Instance.playerJump);
-=======
-//            playerJumpEvent = AudioManager.Instance.CreateInstance(FMODEvents.Instance.playerJump);
->>>>>>> Stashed changes
 
             PlayerSpeed = defaultPlayerSpeed;
 			Mass = playerManager.defaultMass;
