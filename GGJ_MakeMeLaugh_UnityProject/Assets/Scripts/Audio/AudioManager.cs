@@ -12,13 +12,13 @@ namespace GameJam.Audio
 
         void Awake()
         {
-            if (Instance == null)
+            if (Instance != null && Instance != this)
             {
-                Instance = this;
+                Destroy(this);
             }
             else
             {
-                Destroy(this);
+                Instance = this;
             }
         }
 

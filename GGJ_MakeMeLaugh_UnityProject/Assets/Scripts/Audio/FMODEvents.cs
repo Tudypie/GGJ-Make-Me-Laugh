@@ -10,19 +10,15 @@ namespace GameJam.Audio
     {
         public static FMODEvents Instance { get; private set; }
 
-        [Header("Player Sounds")]
-        public EventReference playerFootsteps;
-        public EventReference playerJump;
-
         void Awake()
         {
-            if(Instance == null)
+            if (Instance != null && Instance != this)
             {
-                Instance = this;
+                Destroy(this);
             }
             else
             {
-                Destroy(this);
+                Instance = this;
             }
         }
     }

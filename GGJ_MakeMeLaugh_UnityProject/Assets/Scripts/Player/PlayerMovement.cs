@@ -10,7 +10,7 @@ namespace GameJam.Player
 	{
 		[Header("Movement Config:")]
 		public float defaultPlayerSpeed;
-		[SerializeField] private EventInstance playerJumpEvent;
+		[SerializeField] private EventReference playerJumpSound;
         [SerializeField] private float jumpHeight;
         [Space]
 		[SerializeField] private Transform groundCheckTransform;
@@ -33,7 +33,7 @@ namespace GameJam.Player
 			playerManager = GetComponent<PlayerManager>();
 			inputManager = InputManager.INPUT;
 
-            playerJumpEvent = AudioManager.Instance.CreateInstance(FMODEvents.Instance.playerJump);
+            //playerJumpEvent = AudioManager.Instance.CreateInstance(FMODEvents.Instance.playerJump);
 
             PlayerSpeed = defaultPlayerSpeed;
 			Mass = playerManager.defaultMass;
@@ -72,7 +72,7 @@ namespace GameJam.Player
 		{
 			if (IsGrounded)
 			{
-				playerJumpEvent.start();
+				AudioManager.Instance.PlayAudio(playerJumpSound);
 				velocity.y = Mathf.Sqrt(jumpHeight * -2f * Mass);
 			}
 		}
