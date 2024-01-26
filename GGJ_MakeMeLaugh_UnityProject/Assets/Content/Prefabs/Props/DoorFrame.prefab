@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 33764604529044136}
   - component: {fileID: 23225896887950982}
   - component: {fileID: 65220055659551262}
+  - component: {fileID: 8653042544264077980}
+  - component: {fileID: 7549946434599566136}
+  - component: {fileID: 8736495510811802570}
   m_Layer: 6
   m_Name: Door
-  m_TagString: Door
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bfb0aca2c40c4d6438dec484c47d72be, type: 2}
+  - {fileID: 2100000, guid: 0510510183906924b978e10fd8973210, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106,6 +109,88 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6405915, y: 0.63696367, z: 0.2}
   m_Center: {x: -0.7992844, y: 0.7562203, z: 0.036343813}
+--- !u!95 &8653042544264077980
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068135135853534}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e81cc2250fa30d7409b4c0412e347b22, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7549946434599566136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068135135853534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26e6e6ee925c274385a61e799c0ecd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannotInteractMessage: 
+  interactMessage: open door
+  canInteract: 1
+  multipleInteractions: 1
+  useScriptableObjectEvent: 0
+  gameEvent: {fileID: 0}
+  unityGameEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8736495510811802570}
+        m_TargetAssemblyTypeName: GameJam.Enviroment.Door, Assembly-CSharp
+        m_MethodName: InteractDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8736495510811802570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068135135853534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bafa485d8a3f81e4f89304420492e252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkForPlayerPos: 1
+  overrideDefaultSounds: 0
+  openSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  closeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1073218003809204
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +253,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bfb0aca2c40c4d6438dec484c47d72be, type: 2}
+  - {fileID: 2100000, guid: 0510510183906924b978e10fd8973210, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -251,7 +336,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bfb0aca2c40c4d6438dec484c47d72be, type: 2}
+  - {fileID: 2100000, guid: 0510510183906924b978e10fd8973210, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

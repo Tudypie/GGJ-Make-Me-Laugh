@@ -10,6 +10,10 @@ namespace GameJam.Audio
     {
         public static FMODEvents Instance { get; private set; }
 
+        [Header("Doors")]
+        public EventReference doorOpen;
+        public EventReference doorClose;
+
         void Awake()
         {
             if (Instance != null && Instance != this)

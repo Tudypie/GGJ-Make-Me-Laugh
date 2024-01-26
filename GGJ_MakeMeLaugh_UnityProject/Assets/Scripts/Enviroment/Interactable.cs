@@ -36,6 +36,6 @@ namespace GameJam.Enviroment
 
 		public void SetCanInteract(bool value) => canInteract = value;
 
-        public void SetInteractionText(string value) => cannotInteractMessage = value;
+        public void SetInteractionText(string value) => interactMessage = value;
 	}
 }

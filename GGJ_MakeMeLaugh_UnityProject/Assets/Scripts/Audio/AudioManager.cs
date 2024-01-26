@@ -8,6 +8,9 @@ namespace GameJam.Audio
 
     public class AudioManager : MonoBehaviour
     {
+        [HideInInspector]
+        public AudioSource audioSource;
+
         public static AudioManager Instance { get; private set; }
 
         void Awake()
@@ -20,6 +23,14 @@ namespace GameJam.Audio
             {
                 Instance = this;
             }
+
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        public void PlayAudio(AudioClip audioClip)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
         }
 
         public void PlayAudio(EventReference sound)
