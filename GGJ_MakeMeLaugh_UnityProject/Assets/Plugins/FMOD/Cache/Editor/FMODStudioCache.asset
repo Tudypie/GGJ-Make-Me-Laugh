@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638418788858384064
+  lastModified: 638418859133944881
   FileSizes:
   - Name: Desktop
     Value: 904
@@ -63,7 +63,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638418788858432852
+  lastModified: 638418859134151487
   FileSizes:
   - Name: Desktop
     Value: 2320
@@ -93,7 +93,7 @@ MonoBehaviour:
   - {fileID: 6999706471190638964}
   StringsBanks:
   - {fileID: -4914538639484425584}
-  cacheTime: 638418788858472862
+  cacheTime: 638418859134151487
   cacheVersion: 131616
 --- !u!114 &2957703457348061776
 MonoBehaviour:
@@ -110,7 +110,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638418788858472862
+  lastModified: 638418859132504143
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -130,7 +130,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638418788858374057
+  lastModified: 638418859133873904
   FileSizes:
   - Name: Desktop
     Value: 2848
