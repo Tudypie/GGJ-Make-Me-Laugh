@@ -68,7 +68,7 @@ namespace GameJam.Player
 		{
 			if (IsGrounded)
 			{
-				jumpAudio.Play();
+				// play jump sound
 				velocity.y = Mathf.Sqrt(jumpHeight * -2f * Mass);
 			}
 		}

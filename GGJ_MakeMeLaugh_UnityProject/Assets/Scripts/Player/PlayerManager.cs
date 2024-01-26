@@ -20,7 +20,6 @@ namespace GameJam.Player
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
 
-			audioSource = GetComponent<AudioSource>();
 			PlayerControler = GetComponent<CharacterController>();
 			PlayerFootsteps = GetComponent<PlayerFootsteps>();
 			PlayerMovement = GetComponent<PlayerMovement>();
