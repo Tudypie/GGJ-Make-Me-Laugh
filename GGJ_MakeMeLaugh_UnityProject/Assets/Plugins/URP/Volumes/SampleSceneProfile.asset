@@ -18,10 +18,17 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
+<<<<<<< Updated upstream
     m_Value: 0.25
   intensity:
     m_OverrideState: 1
     m_Value: 1.53
+=======
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1.7
+>>>>>>> Stashed changes
   scatter:
     m_OverrideState: 0
     m_Value: 0.7
@@ -47,6 +54,7 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
+<<<<<<< Updated upstream
 --- !u!114 &-7412276923983616711
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -72,6 +80,8 @@ MonoBehaviour:
   texture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &-7011558710299706105
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -159,6 +169,7 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
+<<<<<<< Updated upstream
 --- !u!114 &3641935485061374273
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -203,3 +214,5 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 1
     m_Value: 5
+=======
+>>>>>>> Stashed changes
