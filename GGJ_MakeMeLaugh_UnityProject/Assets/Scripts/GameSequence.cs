@@ -37,11 +37,13 @@ public class GameSequence : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private int currentSequenceNum = 0;
     [SerializeField] private int currentMessageNum = 0;
-
+    [Space]
+    [Header("References")]
     [SerializeField] private TMP_Text monitorText;
     [SerializeField] private TMP_Text subtitlesText;
     [SerializeField] private float typewritterEffectDelay = 0.15f;
     [Space]
+    [Header("Sequences")]
     [SerializeField] private sequence[] sequences;
 
     private void Start()
