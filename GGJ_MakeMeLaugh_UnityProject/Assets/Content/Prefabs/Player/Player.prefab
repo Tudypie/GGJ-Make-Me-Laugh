@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 877209971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 3356617575579140238}
   - component: {fileID: 658721780101808157}
   - component: {fileID: 5954778659920387717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShotgunInHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5239501009253017344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 7681202726658429058}
   - component: {fileID: 1998987415553245860}
   - component: {fileID: 4347394446613640191}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shotgun.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 5099760598467788613}
   - component: {fileID: 6240616258084037756}
   - component: {fileID: 4856358262084272549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandGaurd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 9157553291038808229}
   - component: {fileID: 5889479441120044847}
   - component: {fileID: 4712123464966794538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trigger.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: -6397220976342155950}
   - component: {fileID: 780956642280656923}
   - component: {fileID: 8334245378370340720}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 8466724475964905315}
   - component: {fileID: 17205259420170416}
   - component: {fileID: 2139321403325585025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 3988499091883842989}
   - component: {fileID: 5280496808549621748}
   - component: {fileID: 5185905371780578578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
