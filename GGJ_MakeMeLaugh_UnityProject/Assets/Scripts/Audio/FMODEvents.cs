@@ -14,6 +14,10 @@ namespace GameJam.Audio
         public EventReference doorOpen;
         public EventReference doorClose;
 
+        [Header("Shotgun")]
+        public EventReference shotgunEquip;
+        public EventReference shotgunShoot;
+
         void Awake()
         {
             if (Instance != null && Instance != this)

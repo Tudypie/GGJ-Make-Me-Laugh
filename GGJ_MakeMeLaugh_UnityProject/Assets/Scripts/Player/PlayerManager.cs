@@ -14,10 +14,15 @@ namespace GameJam.Player
 		public PlayerFootsteps PlayerFootsteps { get; private set; }
 		public PlayerMovement PlayerMovement { get; private set; }
 		public PlayerLook PlayerLook { get; private set; }
+		public PlayerShotgun PlayerShotgun { get; private set; }
 		public Camera PlayerCamera { get; private set; }
+
+		public static PlayerManager Instance { get; private set; }
 
         void Awake()
         {
+			Instance = this;
+
 			PlayerCamera = Camera.main;
 
 			Cursor.visible = false;
@@ -27,6 +32,7 @@ namespace GameJam.Player
 			PlayerFootsteps = GetComponent<PlayerFootsteps>();
 			PlayerMovement = GetComponent<PlayerMovement>();
 			PlayerLook = GetComponent<PlayerLook>();;
+			PlayerShotgun = GetComponent<PlayerShotgun>();
 		}
 
 		void Update()
