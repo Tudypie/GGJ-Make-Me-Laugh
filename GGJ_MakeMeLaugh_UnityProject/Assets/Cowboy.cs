@@ -50,9 +50,8 @@ public class Cowboy : MonoBehaviour
     {
         if(!isDead)
         {
-            Debug.Log("You got shot");
+            GameSequence.Instance.Die(2);
         }
-
     }
 
     public void Die()

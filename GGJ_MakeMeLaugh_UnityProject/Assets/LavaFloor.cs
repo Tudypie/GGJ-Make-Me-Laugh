@@ -28,6 +28,6 @@ public class LavaFloor : MonoBehaviour
 
     public void KillPlayer()
     {
-        Debug.Log("Burned by lava. (dead)");
+        GameSequence.Instance.Die(3);
     }
 }

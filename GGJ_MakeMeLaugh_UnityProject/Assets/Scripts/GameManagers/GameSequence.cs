@@ -6,6 +6,7 @@ using System;
 using GameJam.Audio;
 using UnityEngine.Events;
 using FMODUnity;
+using static Autodesk.Fbx.FbxAnimCurveDef;
 
 public class GameSequence : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class GameSequence : MonoBehaviour
         public bool autoNext;
         public EventReference audioEvent;
         public UnityEvent eventToTrigger;
+        public float triggerDelay;
     }
 
     [Serializable]
@@ -35,16 +37,27 @@ public class GameSequence : MonoBehaviour
         public message[] messages;
     }
 
+    [Serializable]
+    public struct death
+    {
+        [TextArea(3, 7)]
+        public string message;
+        public float duration;
+        public EventReference audioEvent;
+    }
+
     [Header("Debug")]
     public int currentSequenceNum = 0;
     public int currentMessageNum = 0;
     [Space]
     [Header("References")]
-    [SerializeField] private TMP_Text monitorText;
     [SerializeField] private TMP_Text subtitlesText;
+    [SerializeField] private GameObject blackScreen;
+    private TMP_Text monitorText;
     [SerializeField] private float typewritterEffectDelay = 0.15f;
     [Space]
-    [Header("Sequences")]
+    public death[] deaths;
+    [Space]
     [SerializeField] private sequence[] sequences;
 
     private StudioEventEmitter audioPlayer;
@@ -59,7 +72,7 @@ public class GameSequence : MonoBehaviour
 
     private void Start()
     {
-        currentSequenceNum = PlayerPrefs.GetInt("sequence");
+        currentSequenceNum = 0;
         StartCoroutine(Sequence());
     }
 
@@ -69,6 +82,8 @@ public class GameSequence : MonoBehaviour
     }
 
     private void HideSubtitles() => subtitlesText.text = "";
+
+    private void TriggerMessageEvent() => sequences[currentSequenceNum].messages[currentMessageNum].eventToTrigger?.Invoke();
 
     public void NextMessage(int increment = 1)
     {
@@ -103,6 +118,25 @@ public class GameSequence : MonoBehaviour
         {
             if (sequences[i].name == sequenceName) currentSequenceNum = i;
         }
+        StartCoroutine(Sequence());
+    }
+
+    public void Die(int deathIndex)
+    {
+        currentMessageNum = 0;
+        StopAllCoroutines();
+        StartCoroutine(PlayerDie(deathIndex));
+    }
+
+    IEnumerator PlayerDie(int deathIndex)
+    {
+        blackScreen.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        subtitlesText.text = deaths[deathIndex].message;
+        AudioManager.Instance.PlayAudio(deaths[deathIndex].audioEvent);
+        yield return new WaitForSeconds(deaths[deathIndex].duration);
+        blackScreen.SetActive(false);
+        SavingManager.Instance.LoadGame();
         StartCoroutine(Sequence());
     }
 
@@ -157,7 +191,7 @@ public class GameSequence : MonoBehaviour
                     //AudioManager.Instance.PlayAudio(sequences[currentSequenceNum].messages[currentMessageNum].audioClip);
                 }
 
-                sequences[currentSequenceNum].messages[currentMessageNum].eventToTrigger?.Invoke();
+                Invoke(nameof(TriggerMessageEvent), sequences[currentSequenceNum].messages[currentMessageNum].triggerDelay);
                 //Invoke(nameof(HideSubtitles), sequences[currentSequenceNum].messages[currentMessageNum].audioClip.length);
 
                 if (sequences[currentSequenceNum].messages[currentMessageNum].autoNext)

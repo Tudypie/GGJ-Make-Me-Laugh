@@ -5,7 +5,7 @@
 			<value>player_footsteps</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{4c5ff2ca-a423-474a-8b7b-178485638dcc}</destination>
@@ -91,8 +91,14 @@
 	<object class="MixerBusPanner" id="{4a977993-3d89-4bb2-abc8-9ef5161f57a6}" />
 	<object class="MultiSound" id="{372487a3-614e-42e6-b5e5-2c7600cec83c}">
 		<property name="length">
-			<value>20</value>
+			<value>0.20000000000000001</value>
 		</property>
+		<relationship name="sounds">
+			<destination>{dc1fbf1d-552e-43db-b030-e2cb56c1d25f}</destination>
+			<destination>{d01b04f8-682a-439f-82dd-3ae0c28150d7}</destination>
+			<destination>{13da3ae3-5d0e-4788-a096-a62de8529fa7}</destination>
+			<destination>{d3cfb8f2-3525-43e5-af65-ca56383e9aca}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{c0496150-1f8f-4731-b1ae-c28501e6d86c}">
 		<property name="name">
@@ -115,6 +121,26 @@
 	</object>
 	<object class="MixerBusPanner" id="{befc90eb-3e43-4e13-959d-e9b0fdd9970b}" />
 	<object class="MixerBusFader" id="{eda6efd0-9176-4f55-a75d-adc7bb813b83}" />
+	<object class="SingleSound" id="{dc1fbf1d-552e-43db-b030-e2cb56c1d25f}">
+		<relationship name="audioFile">
+			<destination>{98b6ff03-2de2-406f-a024-ddb330d8db18}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{d01b04f8-682a-439f-82dd-3ae0c28150d7}">
+		<relationship name="audioFile">
+			<destination>{98b6ff03-2de2-406f-a024-ddb330d8db18}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{13da3ae3-5d0e-4788-a096-a62de8529fa7}">
+		<relationship name="audioFile">
+			<destination>{98b6ff03-2de2-406f-a024-ddb330d8db18}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{d3cfb8f2-3525-43e5-af65-ca56383e9aca}">
+		<relationship name="audioFile">
+			<destination>{98b6ff03-2de2-406f-a024-ddb330d8db18}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{210d64fe-f99f-4100-ac1a-62fbb89334eb}">
 		<relationship name="effects">
 			<destination>{fb6a860b-71cc-4d1d-a18e-a4b281d4c99b}</destination>

@@ -383,16 +383,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSequenceNum: 0
   currentMessageNum: 0
-  monitorText: {fileID: 0}
   subtitlesText: {fileID: 0}
+  blackScreen: {fileID: 0}
   typewritterEffectDelay: 0.04
+  deaths:
+  - message: Hopefully the next subject will express their free will in a way that
+      WON'T bore us to death.
+    duration: 5
+    audioEvent:
+      Guid:
+        Data1: 1676491086
+        Data2: 1112658747
+        Data3: -1463451463
+        Data4: 2065859258
+      Path: event:/VoiceLines/Death/white_room_death
+  - message: Ouch! Talk about a spike in blood pressure!
+    duration: 4
+    audioEvent:
+      Guid:
+        Data1: 382995837
+        Data2: 1330281525
+        Data3: -1618210638
+        Data4: -1017202797
+      Path: event:/VoiceLines/Death/spike_death
+  - message: 'Unfortunately, you did not notice the shotgun you could''ve picked
+      up from under the counter. Even more unfortunate, you appear to have a hole
+      in your skull.
+
+'
+    duration: 9
+    audioEvent:
+      Guid:
+        Data1: 1628006202
+        Data2: 1074992701
+        Data3: 1516596669
+        Data4: -585092577
+      Path: event:/VoiceLines/Death/bar_death
   sequences:
   - name: Wake up
     autoNext: 1
     messages:
     - author: 0
       text: You wake up in a white room.
-      duration: 5
+      duration: 3
       autoNext: 1
       audioEvent:
         Guid:
@@ -404,9 +437,10 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'You look around. As per your previous observation, it''s a white room. '
-      duration: 5
+      duration: 6
       autoNext: 1
       audioEvent:
         Guid:
@@ -418,6 +452,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Behind you however, there is a door. Also white, not much special about
         it. '
@@ -445,13 +480,14 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
   - name: Not leave room
     autoNext: 0
     messages:
     - author: 0
       text: Before opening the door, you stop for a while longer to admire the white
         room. Blinding, truly. But perhaps you should now get a move on.
-      duration: 5
+      duration: 10
       autoNext: 1
       audioEvent:
         Guid:
@@ -463,11 +499,12 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: In a silly turn of events, you decide to continue sitting in the room
         you woke up. You wait and you wait. however EVENTUALLY, you decide to GO
         THROUGH THE DOOR.
-      duration: 5
+      duration: 14
       autoNext: 1
       audioEvent:
         Guid:
@@ -479,11 +516,12 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Without much consideration for where, why, or who you are, you decide
         NOT to try opening the door. Instead, you choose to spend the rest of your
         days in the same blinding room, until finally... you die. '
-      duration: 5
+      duration: 15
       autoNext: 0
       audioEvent:
         Guid:
@@ -494,7 +532,20 @@ MonoBehaviour:
         Path: event:/VoiceLines/NotLeaveRoom/without_much_consideration
       eventToTrigger:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 4820759814842357840}
+            m_TargetAssemblyTypeName: GameSequence, Assembly-CSharp
+            m_MethodName: Die
+            m_Mode: 3
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      triggerDelay: 13
   - name: Leave room
     autoNext: 0
     messages:
@@ -513,6 +564,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: As you traverse the corridor, you start wondering where you really are.
         "What is this place?". Perhaps the answer lies behind the next door.
@@ -528,6 +580,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Entering the room behind the door, you marvel as you're met by a massive
         monitor screen.
@@ -543,6 +596,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: AI 1
     autoNext: 1
     messages:
@@ -563,6 +617,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: You are, frankly, a bit confused, but decide to keep listening.
       duration: 5
@@ -577,6 +632,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I will display a series of jokes.
 
@@ -596,6 +652,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Seems simple enough.
       duration: 5
@@ -610,6 +667,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I will proceed with the first joke.
 
@@ -627,6 +685,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: You find the joke quite funny!
       duration: 5
@@ -641,6 +700,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I made you laugh.
 
@@ -662,6 +722,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: '[Input joke]'
       duration: 5
@@ -676,6 +737,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: This AI knows its stuff! That's now two laughs in a row. That's two more
         than I ever got from any crowd...
@@ -691,6 +753,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I made you laugh.
 
@@ -712,6 +775,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: Have you heard the ending to the maze joke? They say it's aMAZEing!
       duration: 7
@@ -726,6 +790,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: That didn't quite hit the mark. You find the joke, frankly, quite damp.
       duration: 5
@@ -740,6 +805,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I didn''t make you laugh.
 
@@ -762,6 +828,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: Start maze
     autoNext: 0
     messages:
@@ -827,6 +894,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
     - author: 0
       text: However, you see that the corridor is particularly long. Longer than
         you remember.
@@ -842,6 +910,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: Enter maze
     autoNext: 0
     messages:
@@ -873,6 +942,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
   - name: Dead end
     autoNext: 0
     messages:
@@ -890,6 +960,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: Maze
     autoNext: 0
     messages:
@@ -909,6 +980,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: You happen to notice weird holes on the floor in this corridor. You might
         want to avoid stepping over those.
@@ -924,6 +996,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Your intuition serves you well! But still, why in the world are there
         spikes coming out of the ground? Your confusion about this place seems to
@@ -940,6 +1013,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Finally, you can see a door!
 
@@ -957,8 +1031,9 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: Jukebox room
-    autoNext: 1
+    autoNext: 0
     messages:
     - author: 0
       text: 'Entering the room, the door closes down behind you with a bang.
@@ -1014,6 +1089,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
     - author: 0
       text: Two objects seem to have appeared in the before empty room. A white table
         and... what appears to be a Jukebox/Music Box
@@ -1029,6 +1105,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: As the song ends, you can hear the door opening. Behind it, the old corridor
         appears to be back.
@@ -1056,13 +1133,14 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
     - author: 0
       text: 'With nothing left to do, you find yourself forced to once again traverse
         the corridor over to the monitor room.
 
         Yipee.'
       duration: 5
-      autoNext: 1
+      autoNext: 0
       audioEvent:
         Guid:
           Data1: 1212650830
@@ -1073,6 +1151,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: AI 2
     autoNext: 1
     messages:
@@ -1096,6 +1175,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: '[Insert Good Joke]'
       duration: 5
@@ -1110,6 +1190,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I made you laugh.
 
@@ -1131,6 +1212,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'An assassin walks into a bar. He pulls out his knives and says "Hey
         barman, give me a shot".
@@ -1149,6 +1231,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Was that the punchline?
 
@@ -1166,6 +1249,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'I didn''t make you laugh.
 
@@ -1188,6 +1272,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: Start bar
     autoNext: 0
     messages:
@@ -1206,6 +1291,18 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls:
+          - m_Target: {fileID: 11400000, guid: f2052d26698346b4eb5b6699458b4054, type: 2}
+            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
+            m_MethodName: Invoke
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
           - m_Target: {fileID: 11400000, guid: 210651ddb1912a547a269cc30cf0681b, type: 2}
             m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
             m_MethodName: Invoke
@@ -1218,6 +1315,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
   - name: Bar
     autoNext: 0
     messages:
@@ -1247,6 +1345,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
     - author: 0
       text: You've given him a shot alright! The gunslinger has been outslinged...
         or something like that.
@@ -1262,6 +1361,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'The once white room appears to now be a fully decorated bar.
 
@@ -1279,6 +1379,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Just like last time, as soon as the song stops playing, the door opens.
         You might as well head back to the monitor room.
@@ -1294,6 +1395,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: AI 3
     autoNext: 0
     messages:
@@ -1318,6 +1420,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: I don't understand why everyone hates volcanoes. They're not that unLAVAble.
       duration: 5
@@ -1332,6 +1435,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Is it just me, or are the jokes intentionally worse?
       duration: 5
@@ -1346,6 +1450,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'INPUT NOTED
 
@@ -1363,6 +1468,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: The AI does not seem very happy. In fact, you're starting to realize
         that, if this goes like the last two times, not laughing was not a very good
@@ -1379,6 +1485,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: Start lava
     autoNext: 0
     messages:
@@ -1445,6 +1552,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
   - name: Lava
     autoNext: 0
     messages:
@@ -1468,6 +1576,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Despite the not very lovely lava floor, you''ve made it! '
       duration: 5
@@ -1482,6 +1591,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
   - name: End
     autoNext: 0
     messages:
@@ -1500,6 +1610,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'No music this time it seems. Just... pristine floors and walls. '
       duration: 5
@@ -1514,6 +1625,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Now that you have a bit of time to yourself, you come up with a plan.
         You realize that if you laugh at every single joke, as terrible as it may
@@ -1530,6 +1642,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: '"I am brilliant!" you think to yourself, totally not having got the
         idea from yours truly the Narrator. '
@@ -1545,6 +1658,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Sigh, I never get any credit. I wish I could be included in reality,
         but frankly, I am not allowed. Not that I'd like to be in your place.
@@ -1560,6 +1674,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Aha! That's the door opening!
       duration: 5
@@ -1574,6 +1689,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Time to put your plan into action.
       duration: 5
@@ -1588,6 +1704,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'System updated.
 
@@ -1605,6 +1722,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: '[bad joke]'
       duration: 5
@@ -1619,6 +1737,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: '[bad joke]'
       duration: 5
@@ -1633,6 +1752,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: It's working!
       duration: 5
@@ -1647,6 +1767,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: '...
 
@@ -1668,6 +1789,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Hold on that's not...
       duration: 5
@@ -1682,6 +1804,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: He lived in a small white room. White as cream. Until a certain someone
         came knocking on his door.
@@ -1697,6 +1820,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: Knock knock
       duration: 5
@@ -1711,6 +1835,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: Darn! There's an actual knock on my door! Nobody has access to my door!
         I don't like this, not at all, no no no...
@@ -1726,6 +1851,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Who''s there
 
@@ -1750,6 +1876,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: That is NOT funny!
       duration: 5
@@ -1764,6 +1891,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: YOU DID NOT LAUGH
       duration: 5
@@ -1778,6 +1906,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: What! No? You did laugh! Why is it saying you didn't laugh?
       duration: 5
@@ -1792,6 +1921,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: I-I don't understand!
       duration: 5
@@ -1806,6 +1936,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: "Wait... Sh*t. \nI am the one who didn't laugh"
       duration: 5
@@ -1820,6 +1951,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 0
       text: 'Fu-
 
@@ -1837,6 +1969,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'Thank you for the input.
 
@@ -1878,6 +2011,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      triggerDelay: 0
   - name: Last stage
     autoNext: 1
     messages:
@@ -1898,6 +2032,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'For this stage
 
@@ -1915,6 +2050,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: 'Input Noted
 
@@ -1932,6 +2068,7 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0
     - author: 1
       text: YOU DID NOT MAKE ME LAUGH
       duration: 5
@@ -1946,3 +2083,4 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
+      triggerDelay: 0

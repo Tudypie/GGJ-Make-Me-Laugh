@@ -37,7 +37,7 @@ public class LabSpikes : MonoBehaviour
     {
         if(isInTrigger)
         {
-            Debug.Log("DIE");
+            GameSequence.Instance.Die(1);
         }
     }
 }

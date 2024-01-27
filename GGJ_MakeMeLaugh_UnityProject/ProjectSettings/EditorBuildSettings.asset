@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FloorIsLava.unity
     guid: ae03a5df4bd648f4fb083015b9c7f84b
   - enabled: 1
-    path: Assets/Scenes/ThirdMonitorRoom.unity
+    path: Assets/Scenes/SecondWhiteRoom.unity
     guid: 96fcf74a97220c740a455eb45a09c42f
   - enabled: 1
     path: Assets/Scenes/NarratorRoom.unity
