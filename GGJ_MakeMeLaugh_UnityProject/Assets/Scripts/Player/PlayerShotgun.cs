@@ -35,11 +35,11 @@ public class PlayerShotgun : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit))
         {
-            // enemy die
             Debug.Log(hit.transform.gameObject.name);
-            if (hit.collider != null)
+            if (hit.collider != null && hit.collider.gameObject.GetComponent<Cowboy>() != null)
             {
                 hit.collider.GetComponent<Cowboy>().Die();
+                GameSequence.Instance.NextMessage();
             }
         }
 
