@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{1339a4d1-5c07-4c51-a824-50ce141eae53}">
+		<property name="name">
+			<value>EnterMaze</value>
+		</property>
+		<relationship name="folder">
+			<destination>{73129256-3c57-4b95-bb42-93f4ab5c262d}</destination>
+		</relationship>
+	</object>
+</objects>

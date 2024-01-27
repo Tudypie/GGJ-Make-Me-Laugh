@@ -5,6 +5,7 @@ using TMPro;
 using System;
 using GameJam.Audio;
 using UnityEngine.Events;
+using FMODUnity;
 
 public class GameSequence : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class GameSequence : MonoBehaviour
         public string text;
         public float duration;
         public bool autoNext;
-        public AudioClip audioClip;
+        public EventReference audioEvent;
         public UnityEvent eventToTrigger;
     }
 
@@ -46,11 +47,14 @@ public class GameSequence : MonoBehaviour
     [Header("Sequences")]
     [SerializeField] private sequence[] sequences;
 
+    private StudioEventEmitter audioPlayer;
+
     public static GameSequence Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
+        audioPlayer = GetComponent<StudioEventEmitter>();
     }
 
     private void Start()
@@ -59,13 +63,18 @@ public class GameSequence : MonoBehaviour
         StartCoroutine(Sequence());
     }
 
+    private void Update()
+    {
+        monitorText = GameObject.FindGameObjectWithTag("MonitorText").gameObject.GetComponent<TMP_Text>();
+    }
+
     private void HideSubtitles() => subtitlesText.text = "";
 
     public void NextMessage(int increment = 1)
     {
         StopAllCoroutines();
         CancelInvoke();
-        AudioManager.Instance.audioSource.Stop();
+        audioPlayer.Stop();
         currentMessageNum += increment;
         StartCoroutine(Sequence());
     }
@@ -75,7 +84,7 @@ public class GameSequence : MonoBehaviour
         StopAllCoroutines();
         CancelInvoke();
         HideSubtitles();
-        AudioManager.Instance.audioSource.Stop();
+        audioPlayer.Stop();
 
         currentMessageNum = 0;
         currentSequenceNum += increment;
@@ -87,7 +96,7 @@ public class GameSequence : MonoBehaviour
         StopAllCoroutines();
         CancelInvoke();
         HideSubtitles();
-        AudioManager.Instance.audioSource.Stop();
+        audioPlayer.Stop();
 
         currentMessageNum = 0;
         for (int i = 0; i < sequences.Length; i++)
@@ -141,6 +150,9 @@ public class GameSequence : MonoBehaviour
                 else
                 {
                     subtitlesText.text = sequences[currentSequenceNum].messages[currentMessageNum].text;
+                    audioPlayer.Stop();
+                    audioPlayer.EventReference = sequences[currentSequenceNum].messages[currentMessageNum].audioEvent;
+                    audioPlayer.Play();
                     //StartCoroutine(ShowSubtitlesText(sequences[currentSequenceNum].messages[currentMessageNum].text));
                     //AudioManager.Instance.PlayAudio(sequences[currentSequenceNum].messages[currentMessageNum].audioClip);
                 }

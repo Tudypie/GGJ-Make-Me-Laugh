@@ -125,509 +125,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &212361593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 212361595}
-  - component: {fileID: 212361596}
-  m_Layer: 0
-  m_Name: GameSequence
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &212361595
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212361593}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 863748407}
-  - {fileID: 1794437614}
-  - {fileID: 787719152}
-  - {fileID: 1740108003}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &212361596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212361593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad2725682dc14404fb6aa143339b8a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSequenceNum: 0
-  currentMessageNum: 0
-  monitorText: {fileID: 0}
-  subtitlesText: {fileID: 1102342431}
-  typewritterEffectDelay: 0.04
-  sequences:
-  - name: Wake up
-    autoNext: 1
-    messages:
-    - author: 0
-      text: You wake up in a white room.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: 'You look around. As per your previous observation, it''s a white room. '
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: 'Behind you however, there is a door. Also white, not much special about
-        it. '
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 06c11c5b450825541a7fcc4fe4685959, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-  - name: Not leave room
-    autoNext: 0
-    messages:
-    - author: 0
-      text: Before opening the door, you stop for a while longer to admire the white
-        room. Blinding, truly. But perhaps you should now get a move on.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: In a silly turn of events, you decide to continue sitting in the room
-        you woke up. You wait and you wait. however EVENTUALLY, you decide to GO
-        THROUGH THE DOOR.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: 'Without much consideration for where, why, or who you are, you decide
-        NOT to try opening the door. Instead, you choose to spend the rest of your
-        days in the same blinding room, until finally... you die. '
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-  - name: Leave room
-    autoNext: 0
-    messages:
-    - author: 0
-      text: With a simple press of the handle, the door opens! In front lays an empty
-        corridor, with ANOTHER door at the end of it.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: As you traverse the corridor, you start wondering where you really are.
-        "What is this place?". Perhaps the answer lies behind the next door.
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: Entering the room behind the door, you marvel as you're met by a massive
-        monitor screen.
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-  - name: AI 1
-    autoNext: 1
-    messages:
-    - author: 1
-      text: 'Hello there. I am an Artificial intelligence researching AI understanding
-        of human humor. You are here to help with my research.
-
-'
-      duration: 3
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: You are, frankly, a bit confused, but decide to keep listening.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: 'I will display a series of jokes.
-
-        Please laugh whenever you
-        find a joke funny.
-
-'
-      duration: 7
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: Seems simple enough.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: 'I will proceed with the first joke.
-
-
-        [Joke]'
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: You find the joke quite funny!
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: 'I made you laugh.
-
-        Input noted.
-
-        Humor algorithm updated.
-
-        I
-        will now proceed with the next joke.'
-      duration: 7
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: '[Input joke]'
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: This AI knows its stuff! That's now two laughs in a row. That's two more
-        than I ever got from any crowd...
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: 'I made you laugh.
-
-        Input noted.
-
-        Humor algorithm updated.
-
-        I
-        will now proceed with the next joke.'
-      duration: 7
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: Have you heard the ending to the maze joke? They say it's aMAZEing!
-      duration: 7
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 0
-      text: That didn't quite hit the mark. You find the joke, frankly, quite damp.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-    - author: 1
-      text: 'I didn''t make you laugh.
-
-        Input noted.
-
-        Humor algorithm
-        updated.
-
-        Please wait in the other room while I perform a system
-        restart.'
-      duration: 7
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-  - name: Start minigame
-    autoNext: 0
-    messages:
-    - author: 0
-      text: As the monitor shuts down, you can hear the door open.
-      duration: 5
-      autoNext: 1
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 8a1d1a11a17e7e846a11619e2971c30f, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 11400000, guid: d445344cc66509e4bbfaa6523cc14762, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 11400000, guid: 2906be3edc6d165409413ce3ba5eef23, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - author: 0
-      text: However, you see that the corridor is particularly long. Longer than
-        you remember.
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls: []
-  - name: Maze
-    autoNext: 1
-    messages:
-    - author: 0
-      text: As you reach the end of the corridor, you stand confused. There is no
-        door, and moreso, the corridor now splits into multiple hallways! This just
-        doesn't make any sense!
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 712cfd5e30c66694c83d255e38b6b7f1, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - author: 0
-      text: As you continue your random stumbling through long winded corridors,
-        you can't help but wonder. Does this have something to do with the Maze joke?
-        Surely not... right?
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 712cfd5e30c66694c83d255e38b6b7f1, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - author: 0
-      text: You happen to notice weird holes on the floor in this corridor. You might
-        want to avoid stepping over those.
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 712cfd5e30c66694c83d255e38b6b7f1, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - author: 0
-      text: Your intuition serves you well! But still, why in the world are there
-        spikes coming out of the ground? Your confusion about this place seems to
-        only grow by the minute. Yet all you can do is comply.
-      duration: 5
-      autoNext: 0
-      audioClip: {fileID: 0}
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 712cfd5e30c66694c83d255e38b6b7f1, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
---- !u!1 &787719151
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 787719152}
-  - component: {fileID: 787719153}
-  m_Layer: 0
-  m_Name: NextMessage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &787719152
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787719151}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 212361595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &787719153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787719151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 3eefdd86f38f48f43a10fcd981230485, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 212361596}
-        m_TargetAssemblyTypeName: GameSequence, Assembly-CSharp
-        m_MethodName: NextMessage
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Leave room
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,66 +174,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &863748406
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 863748407}
-  - component: {fileID: 863748408}
-  m_Layer: 0
-  m_Name: NextSequence
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &863748407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863748406}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 212361595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &863748408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863748406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: b959c005eea59f946a9d9e8f19f5121b, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 212361596}
-        m_TargetAssemblyTypeName: GameSequence, Assembly-CSharp
-        m_MethodName: NextSequence
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Leave room
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1102342430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -935,126 +372,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22b43f9bd198581418d7659d727b4ed5, type: 3}
---- !u!1 &1740108002
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1740108003}
-  - component: {fileID: 1740108004}
-  m_Layer: 0
-  m_Name: ChangeSequenceToLeaveRoom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1740108003
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740108002}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 212361595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1740108004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740108002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 4f492c04dc9e4e04ebe2c7eae059b5a3, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 212361596}
-        m_TargetAssemblyTypeName: GameSequence, Assembly-CSharp
-        m_MethodName: ChangeSequence
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: Leave room
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!1 &1794437613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1794437614}
-  - component: {fileID: 1794437615}
-  m_Layer: 0
-  m_Name: SkipNextSequence
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1794437614
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794437613}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 212361595}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1794437615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794437613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: aebe8dcb30532d04497ccffcb33935fd, type: 2}
-  unityEventResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 212361596}
-        m_TargetAssemblyTypeName: GameSequence, Assembly-CSharp
-        m_MethodName: NextSequence
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: Leave room
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &400341788981664995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1327,6 +644,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab6998ddd0da3c548a1618ae41b7a1d9, type: 3}
+--- !u!1001 &5603684133708123531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: subtitlesText
+      value: 
+      objectReference: {fileID: 1102342431}
+    - target: {fileID: 6620869542417128514, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_Name
+      value: GameSequence
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8402065760484159302, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 02320407486514f4fbdea2d502e6adba, type: 3}
 --- !u!1001 &8791635762240615887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1401,7 +791,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1613463591}
   - {fileID: 1102342430}
-  - {fileID: 212361595}
+  - {fileID: 5603684133708123531}
   - {fileID: 832575519}
   - {fileID: 5030006864026587690}
   - {fileID: 2031316969531745765}
