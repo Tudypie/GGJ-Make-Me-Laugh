@@ -35,8 +35,8 @@ public class GameSequence : MonoBehaviour
     }
 
     [Header("Debug")]
-    [SerializeField] private int currentSequenceNum = 0;
-    [SerializeField] private int currentMessageNum = 0;
+    public int currentSequenceNum = 0;
+    public int currentMessageNum = 0;
     [Space]
     [Header("References")]
     [SerializeField] private TMP_Text monitorText;
@@ -45,6 +45,13 @@ public class GameSequence : MonoBehaviour
     [Space]
     [Header("Sequences")]
     [SerializeField] private sequence[] sequences;
+
+    public static GameSequence Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
