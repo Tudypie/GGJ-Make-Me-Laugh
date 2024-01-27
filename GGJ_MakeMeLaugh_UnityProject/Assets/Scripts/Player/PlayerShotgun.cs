@@ -37,9 +37,9 @@ public class PlayerShotgun : MonoBehaviour
         {
             // enemy die
             Debug.Log(hit.transform.gameObject.name);
-            if (hit.rigidbody != null)
+            if (hit.collider != null)
             {
-                hit.rigidbody.AddForce(-hit.normal * 100f);
+                hit.collider.GetComponent<Cowboy>().Die();
             }
         }
 
