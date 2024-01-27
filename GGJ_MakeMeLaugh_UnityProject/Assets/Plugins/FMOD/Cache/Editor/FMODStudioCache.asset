@@ -1,33 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8597555547501417212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/door_open
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/door_open
-  Guid:
-    Data1: 1786693441
-    Data2: 1318141808
-    Data3: -1003847234
-    Data4: 728430054
-  Banks:
-  - {fileID: 6999706471190638964}
-  - {fileID: -1492945560232697778}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-4914538639484425584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,11 +15,39 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638419461776458882
+  lastModified: 638418859133944881
   FileSizes:
   - Name: Desktop
-    Value: 1112
+    Value: 904
   Exists: 1
+--- !u!114 &-3242259434553483808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/player_jump
+  m_EditorClassIdentifier: 
+  Path: event:/Player/player_jump
+  Guid:
+    Data1: -381396710
+    Data2: 1226770865
+    Data3: -1212718188
+    Data4: -634688155
+  Banks:
+  - {fileID: 6999706471190638964}
+  - {fileID: -1492945560232697778}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20000
 --- !u!114 &-1492945560232697778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,10 +63,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638419461776608885
+  lastModified: 638418859134151487
   FileSizes:
   - Name: Desktop
-    Value: 4904
+    Value: 2320
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -86,20 +86,16 @@ MonoBehaviour:
   - {fileID: 6999706471190638964}
   - {fileID: -1492945560232697778}
   EditorEvents:
-  - {fileID: 8775439594753035872}
-  - {fileID: 414468502968554868}
-  - {fileID: -8597555547501417212}
-  - {fileID: 3098789459858239199}
-  - {fileID: 8471549527471779642}
-  - {fileID: 4548907034287722876}
+  - {fileID: 1698209506472935792}
+  - {fileID: -3242259434553483808}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6999706471190638964}
   StringsBanks:
   - {fileID: -4914538639484425584}
-  cacheTime: 638419461776608885
+  cacheTime: 638418859134151487
   cacheVersion: 131616
---- !u!114 &414468502968554868
+--- !u!114 &1698209506472935792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,14 +105,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_jump
+  m_Name: event:/Player/player_footsteps
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_jump
+  Path: event:/Player/player_footsteps
   Guid:
-    Data1: -381396710
-    Data2: 1226770865
-    Data3: -1212718188
-    Data4: -634688155
+    Data1: 641915927
+    Data2: 1306323377
+    Data3: -841795150
+    Data4: -2116940129
   Banks:
   - {fileID: 6999706471190638964}
   - {fileID: -1492945560232697778}
@@ -142,67 +138,11 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638419092858423780
+  lastModified: 638418859132504143
   FileSizes:
   - Name: Desktop
     Value: 494
   Exists: 1
---- !u!114 &3098789459858239199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Door/door_close
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Door/door_close
-  Guid:
-    Data1: -1045349639
-    Data2: 1076041648
-    Data3: -1509826941
-    Data4: -1630207080
-  Banks:
-  - {fileID: 6999706471190638964}
-  - {fileID: -1492945560232697778}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &4548907034287722876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Shotgun/shotgun_equip
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Shotgun/shotgun_equip
-  Guid:
-    Data1: 1980784114
-    Data2: 1187243985
-    Data3: -1470849645
-    Data4: -1062647132
-  Banks:
-  - {fileID: 6999706471190638964}
-  - {fileID: -1492945560232697778}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &6999706471190638964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,64 +158,8 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638419461776438895
+  lastModified: 638418859133873904
   FileSizes:
   - Name: Desktop
-    Value: 5432
+    Value: 2848
   Exists: 1
---- !u!114 &8471549527471779642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Shotgun/shotgun_shoot
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Shotgun/shotgun_shoot
-  Guid:
-    Data1: 202563203
-    Data2: 1135044140
-    Data3: 862110123
-    Data4: -725097854
-  Banks:
-  - {fileID: 6999706471190638964}
-  - {fileID: -1492945560232697778}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &8775439594753035872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Player/player_footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Player/player_footsteps
-  Guid:
-    Data1: 641915927
-    Data2: 1306323377
-    Data3: -841795150
-    Data4: -2116940129
-  Banks:
-  - {fileID: 6999706471190638964}
-  - {fileID: -1492945560232697778}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 20000
