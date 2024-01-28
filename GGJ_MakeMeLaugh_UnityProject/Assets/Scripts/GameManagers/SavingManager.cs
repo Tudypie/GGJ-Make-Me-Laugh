@@ -9,9 +9,9 @@ public class SavingManager : MonoBehaviour
     public string savedSceneName;
     public int savedGameSequence;
     public int savedSequenceMessage;
+    public Transform player;
     public Vector3 savedPlayerPosition;
     public Quaternion savedPlayerRotation;
-    private Transform player;
 
     public static SavingManager Instance { get; private set; }
 
@@ -22,7 +22,7 @@ public class SavingManager : MonoBehaviour
 
     private void Start()
     {
-        player = PlayerManager.Instance.gameObject.transform;
+        //player = PlayerManager.Instance.gameObject.transform;
         SaveGame("WhiteRoom");
     }
 

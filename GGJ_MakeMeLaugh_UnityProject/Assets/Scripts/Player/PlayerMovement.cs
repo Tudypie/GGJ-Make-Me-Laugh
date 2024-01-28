@@ -11,6 +11,7 @@ namespace GameJam.Player
 		[Header("Movement Config:")]
 		public float defaultPlayerSpeed;
         [SerializeField] private float jumpHeight;
+		[SerializeField] private float velocityMultiplier;
         [Space]
 		[SerializeField] private Transform groundCheckTransform;
 		[SerializeField] private LayerMask groundCheckMask;
@@ -25,7 +26,7 @@ namespace GameJam.Player
 		public bool IsOnLadder { get; set; }
 		public bool IsWalking { get; private set; }
 
-		public bool IsGrounded => Physics.CheckSphere(groundCheckTransform.position, 0.45f, groundCheckMask);
+		public bool IsGrounded => Physics.CheckSphere(groundCheckTransform.position, 0.3f, groundCheckMask);
 
 		void Awake()
 		{
@@ -48,9 +49,11 @@ namespace GameJam.Player
 
 			if (IsOnLadder && velocity.y < -2f) velocity.y = -2f; // Reset the velocity when on the ladder
 
-			if (!IsGrounded && (playerManager.PlayerControler.collisionFlags & CollisionFlags.Above) != 0) velocity.y = -velocity.y; // Fix for player sticking on ceilings for a short time when jumping
+			if (!IsGrounded) velocity.y += Time.deltaTime * velocityMultiplier;
 
-			Move();
+            //if (!IsGrounded && (playerManager.PlayerControler.collisionFlags & CollisionFlags.Above) != 0) velocity.y = -velocity.y; // Fix for player sticking on ceilings for a short time when jumping
+
+            Move();
 		}
 
 		private void Move()
