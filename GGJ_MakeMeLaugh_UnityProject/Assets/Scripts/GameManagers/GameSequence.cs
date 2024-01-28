@@ -101,12 +101,15 @@ public class GameSequence : MonoBehaviour
         monitorText.text = "";
     }
 
+    public void StartGame() => StartCoroutine(Sequence());
+
     public void NextMessage(int increment = 1)
     {
         StopAllCoroutines();
         CancelInvoke();
-        audioPlayer.Stop();
+
         currentMessageNum += increment;
+        if (sequences[currentSequenceNum].messages[currentMessageNum].author == author.Narrator) audioPlayer.Stop();
         StartCoroutine(Sequence());
     }
 
@@ -115,10 +118,10 @@ public class GameSequence : MonoBehaviour
         StopAllCoroutines();
         CancelInvoke();
         HideSubtitles();
-        audioPlayer.Stop();
 
         currentMessageNum = 0;
         currentSequenceNum += increment;
+        if (sequences[currentSequenceNum].messages[currentMessageNum].author == author.Narrator) audioPlayer.Stop();
         StartCoroutine(Sequence());
     }
 
@@ -127,13 +130,13 @@ public class GameSequence : MonoBehaviour
         StopAllCoroutines();
         CancelInvoke();
         HideSubtitles();
-        audioPlayer.Stop();
 
         currentMessageNum = 0;
         for (int i = 0; i < sequences.Length; i++)
         {
             if (sequences[i].name == sequenceName) currentSequenceNum = i;
         }
+        if (sequences[currentSequenceNum].messages[currentMessageNum].author == author.Narrator) audioPlayer.Stop();
         StartCoroutine(Sequence());
     }
 
@@ -143,6 +146,7 @@ public class GameSequence : MonoBehaviour
         CancelInvoke();
         audioPlayer.Stop();
         currentMessageNum = 0;
+        SavingManager.Instance.LoadGame();
         StartCoroutine(PlayerDie(deathIndex));
     }
 
@@ -154,9 +158,8 @@ public class GameSequence : MonoBehaviour
         subtitlesText.text = deaths[deathIndex].message;
         yield return new WaitForSeconds(deaths[deathIndex].duration);
         blackScreen.SetActive(false);
-        SavingManager.Instance.LoadGame();
         subtitlesText.text = "";
-        //StartCoroutine(Sequence());
+        if(currentMessageNum == 0) StartCoroutine(Sequence());
     }
 
     IEnumerator ShowMonitorText(string fullText)
