@@ -26,6 +26,7 @@ public class GameSequence : MonoBehaviour
         public float duration;
         public bool autoNext;
         public bool isJoke;
+        public bool shutDownMonitor;
         public EventReference audioEvent;
         public UnityEvent eventToTrigger;
         public float triggerDelay;
@@ -94,6 +95,12 @@ public class GameSequence : MonoBehaviour
 
     private void PlayLaugh() => AudioManager.Instance.PlayAudio(FMODEvents.Instance.playerLaugh);
 
+    private void ShutDownMonitor()
+    {
+        AudioManager.Instance.PlayAudio(FMODEvents.Instance.monitorOff, monitorText.gameObject.transform.position);
+        monitorText.text = "";
+    }
+
     public void NextMessage(int increment = 1)
     {
         StopAllCoroutines();
@@ -148,7 +155,8 @@ public class GameSequence : MonoBehaviour
         yield return new WaitForSeconds(deaths[deathIndex].duration);
         blackScreen.SetActive(false);
         SavingManager.Instance.LoadGame();
-        StartCoroutine(Sequence());
+        subtitlesText.text = "";
+        //StartCoroutine(Sequence());
     }
 
     IEnumerator ShowMonitorText(string fullText)
@@ -193,6 +201,10 @@ public class GameSequence : MonoBehaviour
                     if (sequences[currentSequenceNum].messages[currentMessageNum].isJoke)
                     {
                         Invoke(nameof(PlayLaugh), 2f);
+                    }
+                    if (sequences[currentSequenceNum].messages[currentMessageNum].shutDownMonitor)
+                    {
+                        Invoke(nameof(ShutDownMonitor), sequences[currentSequenceNum].messages[currentMessageNum].duration);
                     }
                 } 
                 else

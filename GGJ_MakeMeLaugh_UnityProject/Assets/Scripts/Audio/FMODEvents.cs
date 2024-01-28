@@ -24,7 +24,8 @@ namespace GameJam.Audio
         public EventReference doorOpen;
         public EventReference doorClose;
         public EventReference spikesUp;
-
+        public EventReference monitorOn;
+        public EventReference monitorOff;
 
         void Awake()
         {

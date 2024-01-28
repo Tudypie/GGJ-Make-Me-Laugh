@@ -8,6 +8,7 @@ public class SavingManager : MonoBehaviour
 {
     public string savedSceneName;
     public int savedGameSequence;
+    public int savedSequenceMessage;
     public Vector3 savedPlayerPosition;
     public Quaternion savedPlayerRotation;
     private Transform player;
@@ -29,6 +30,7 @@ public class SavingManager : MonoBehaviour
     {
         savedSceneName = currentScene;
         savedGameSequence = GameSequence.Instance.currentSequenceNum;
+        savedSequenceMessage = GameSequence.Instance.currentMessageNum;
         savedPlayerPosition = player.position;
         savedPlayerRotation = player.rotation;
     }
@@ -42,6 +44,7 @@ public class SavingManager : MonoBehaviour
         }
 
         GameSequence.Instance.currentSequenceNum = savedGameSequence;
+        GameSequence.Instance.currentMessageNum = savedSequenceMessage;
         player.position = savedPlayerPosition;
         player.rotation = savedPlayerRotation;
     }

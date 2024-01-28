@@ -116,7 +116,7 @@ namespace GameJam.Enviroment
 
             anim.SetInteger("Open", 1);
             anim.SetBool("Close", false);
-            AudioManager.Instance.PlayAudio(FMODEvents.Instance.doorClose, transform.position);
+            AudioManager.Instance.PlayAudio(FMODEvents.Instance.doorOpen, transform.position);
             open = true;
         }
 
