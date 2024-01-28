@@ -665,7 +665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMass: -50
-  PlayerAudio: {fileID: 0}
 --- !u!114 &7302158613498614425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,13 +678,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPlayerSpeed: 3
-  playerJumpSound:
-    Guid:
-      Data1: -381396710
-      Data2: 1226770865
-      Data3: -1212718188
-      Data4: -634688155
-    Path: event:/SFX/Player/player_jump
   jumpHeight: 2
   groundCheckTransform: {fileID: 877209971}
   groundCheckMask:
@@ -721,13 +713,6 @@ MonoBehaviour:
   groundTypeMask:
     serializedVersion: 2
     m_Bits: 1
-  footstepSound:
-    Guid:
-      Data1: 641915927
-      Data2: 1306323377
-      Data3: -841795150
-      Data4: -2116940129
-    Path: event:/SFX/Player/player_footsteps
 --- !u!114 &8466724475964905315
 MonoBehaviour:
   m_ObjectHideFlags: 0
