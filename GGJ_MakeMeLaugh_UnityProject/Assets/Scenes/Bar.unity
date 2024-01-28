@@ -11118,12 +11118,17 @@ PrefabInstance:
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
       propertyPath: EventReference.Path
-      value: event:/Ambient/white_room_soundtrack
+      value: event:/Ambient/white_room_bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
       propertyPath: OverrideMaxDistance
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
@@ -11133,22 +11138,22 @@ PrefabInstance:
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -1528316282
+      value: -1615734727
       objectReference: {fileID: 0}
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1275835025
+      value: 1265442619
       objectReference: {fileID: 0}
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: 2105237666
+      value: 2037377428
       objectReference: {fileID: 0}
     - target: {fileID: 1010119298323146860, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: -847807229
+      value: 387104253
       objectReference: {fileID: 0}
     - target: {fileID: 2175762668845360470, guid: f76333ebdead9d44d9b120a3670ef004,
         type: 3}

@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NarratorRoom.unity
     guid: 2ba2c37241d97cd409f293eb0fa5e084
+  - enabled: 1
+    path: Assets/Scenes/LastStage.unity
+    guid: 140763dea7d34084596f652f06170966
   m_configObjects: {}

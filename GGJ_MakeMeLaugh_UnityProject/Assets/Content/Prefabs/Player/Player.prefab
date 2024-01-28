@@ -678,11 +678,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPlayerSpeed: 3
-  jumpHeight: 2
+  jumpHeight: 1.5
+  velocityMultiplier: 15
   groundCheckTransform: {fileID: 877209971}
   groundCheckMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 256
 --- !u!114 &5308873517372451909
 MonoBehaviour:
   m_ObjectHideFlags: 0
