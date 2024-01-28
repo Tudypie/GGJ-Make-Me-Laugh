@@ -55,7 +55,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 26436
+  Length: 36936
 --- !u!114 &-8854033617894165395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,8 +187,8 @@ MonoBehaviour:
     Data3: -1316353919
     Data4: -1355475820
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -354,8 +354,8 @@ MonoBehaviour:
     Data3: -127297604
     Data4: 705773398
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -419,33 +419,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10605
---- !u!114 &-6907289835792875956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Death/spike_death
-  m_EditorClassIdentifier: 
-  Path: event:/Death/spike_death
-  Guid:
-    Data1: 382995837
-    Data2: 1330281525
-    Data3: -1618210638
-    Data4: -1017202797
-  Banks:
-  - {fileID: 7553782563299632004}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3552
 --- !u!114 &-6752753459283888269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,6 +503,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8097
+--- !u!114 &-6291415020208367052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/shocked
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/shocked
+  Guid:
+    Data1: -2059481270
+    Data2: 1263173530
+    Data3: 927134645
+    Data4: 290634494
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1478
 --- !u!114 &-5324113462830487375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,33 +559,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9586
---- !u!114 &-4548068280482473503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Death/end_game_death
-  m_EditorClassIdentifier: 
-  Path: event:/Death/end_game_death
-  Guid:
-    Data1: -2099675304
-    Data2: 1270910724
-    Data3: 553122719
-    Data4: 470958855
-  Banks:
-  - {fileID: 8881565234032998584}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3552
 --- !u!114 &-4241185126927385366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,6 +587,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5851
+--- !u!114 &-3750055986033614678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/narrator_dying
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/narrator_dying
+  Guid:
+    Data1: -131759820
+    Data2: 1080380484
+    Data3: 898572472
+    Data4: -1823102713
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27456
 --- !u!114 &-3458309823797855781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +663,7 @@ MonoBehaviour:
     Data4: 470958855
   Banks:
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -696,34 +699,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4832
---- !u!114 &-2264226752023257188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Shotgun/shotgun_shoot
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Shotgun/shotgun_shoot
-  Guid:
-    Data1: 202563203
-    Data2: 1135044140
-    Data3: 862110123
-    Data4: -725097854
-  Banks:
-  - {fileID: 8881565234032998584}
-  - {fileID: 6747982855619543671}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1284
 --- !u!114 &-2245388099947198738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,8 +774,8 @@ MonoBehaviour:
     Data3: -1212718188
     Data4: -634688155
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -864,33 +839,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5381
---- !u!114 &-1445712074003842734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Death/bar_death
-  m_EditorClassIdentifier: 
-  Path: event:/Death/bar_death
-  Guid:
-    Data1: 1628006202
-    Data2: 1074992701
-    Data3: 1516596669
-    Data4: -585092577
-  Banks:
-  - {fileID: 7553782563299632004}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10433
 --- !u!114 &-1116298541700880603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,8 +858,8 @@ MonoBehaviour:
     Data3: -841795150
     Data4: -2116940129
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -947,33 +895,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1854
---- !u!114 &-811410648434819747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Death/lava_death
-  m_EditorClassIdentifier: 
-  Path: event:/Death/lava_death
-  Guid:
-    Data1: -1926984151
-    Data2: 1145076616
-    Data3: 775882396
-    Data4: 504144634
-  Banks:
-  - {fileID: 7553782563299632004}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8298
 --- !u!114 &-640988751806318771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,10 +910,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638420491364647954
+  lastModified: 638420545358128136
   FileSizes:
   - Name: Desktop
-    Value: 4870
+    Value: 5006
   Exists: 1
 --- !u!114 &-600976397687980955
 MonoBehaviour:
@@ -1069,6 +990,7 @@ MonoBehaviour:
     Data3: 775882396
     Data4: 504144634
   Banks:
+  - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1184,7 +1106,6 @@ MonoBehaviour:
   - {fileID: 843018784995014603}
   - {fileID: -7915788349661945035}
   - {fileID: -1803708076466566798}
-  - {fileID: -2264226752023257188}
   - {fileID: -1206095781962456}
   - {fileID: 8033251775531989972}
   - {fileID: 361821886088927859}
@@ -1212,16 +1133,10 @@ MonoBehaviour:
   - {fileID: 1333877373342289589}
   - {fileID: 5614492481563744091}
   - {fileID: 8632640868591091228}
-  - {fileID: 832007530707546706}
   - {fileID: 7342126745251163617}
   - {fileID: 5243567716221032871}
   - {fileID: -6752753459283888269}
   - {fileID: -143834399430362661}
-  - {fileID: -811410648434819747}
-  - {fileID: -1445712074003842734}
-  - {fileID: 5122438862484665242}
-  - {fileID: -4548068280482473503}
-  - {fileID: -6907289835792875956}
   - {fileID: 6754669109467004922}
   - {fileID: -7485127209125936145}
   - {fileID: -9044174884349630465}
@@ -1230,12 +1145,17 @@ MonoBehaviour:
   - {fileID: 7483032828614134082}
   - {fileID: -3074900967979892548}
   - {fileID: 5579667924671705226}
+  - {fileID: 1599352071548699265}
+  - {fileID: -6291415020208367052}
+  - {fileID: 482358265157367446}
+  - {fileID: 8763074106671439058}
+  - {fileID: -3750055986033614678}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6747982855619543671}
   StringsBanks:
   - {fileID: -640988751806318771}
-  cacheTime: 638420491364647954
+  cacheTime: 638420545358537584
   cacheVersion: 131616
 --- !u!114 &123577656487502292
 MonoBehaviour:
@@ -1349,6 +1269,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3369
+--- !u!114 &482358265157367446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/shotgun/shotgun_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/shotgun/shotgun_shoot
+  Guid:
+    Data1: 202563203
+    Data2: 1135044140
+    Data3: 862110123
+    Data4: -725097854
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1284
 --- !u!114 &785572484343548725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1368,8 +1316,8 @@ MonoBehaviour:
     Data3: -669894754
     Data4: 1183849084
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1377,34 +1325,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1410
---- !u!114 &832007530707546706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Shotgun/shotgun_equip
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Shotgun/shotgun_equip
-  Guid:
-    Data1: 1980784114
-    Data2: 1187243985
-    Data3: -1470849645
-    Data4: -1062647132
-  Banks:
-  - {fileID: 8881565234032998584}
-  - {fileID: 6747982855619543671}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 828
 --- !u!114 &843018784995014603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1460,7 +1380,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1306
+  Length: 3976
 --- !u!114 &1285632308455955727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,6 +1437,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2377
+--- !u!114 &1599352071548699265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/sus
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/sus
+  Guid:
+    Data1: -1545891787
+    Data2: 1297733093
+    Data3: 1040918967
+    Data4: -1808565984
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3696
 --- !u!114 &1807161818105393446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,8 +1484,8 @@ MonoBehaviour:
     Data3: -1003847234
     Data4: 728430054
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1644,10 +1592,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
-  lastModified: 638420491363594512
+  lastModified: 638420537224626593
   FileSizes:
   - Name: Desktop
-    Value: 2370400
+    Value: 2416288
   Exists: 1
 --- !u!114 &2982248743756001915
 MonoBehaviour:
@@ -1696,6 +1644,7 @@ MonoBehaviour:
     Data3: 1516596669
     Data4: -585092577
   Banks:
+  - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1779,8 +1728,8 @@ MonoBehaviour:
     Data3: -132231250
     Data4: -1410355582
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1816,33 +1765,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2481
---- !u!114 &5122438862484665242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Death/white_room_death
-  m_EditorClassIdentifier: 
-  Path: event:/Death/white_room_death
-  Guid:
-    Data1: 1676491086
-    Data2: 1112658747
-    Data3: -1463451463
-    Data4: 2065859258
-  Banks:
-  - {fileID: 7553782563299632004}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 6175
 --- !u!114 &5139853325373917343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1918,8 +1840,8 @@ MonoBehaviour:
     Data3: -1509826941
     Data4: -1630207080
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1974,6 +1896,7 @@ MonoBehaviour:
     Data3: -1618210638
     Data4: -1017202797
   Banks:
+  - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -2025,10 +1948,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638420491364618008
+  lastModified: 638420545358097980
   FileSizes:
   - Name: Desktop
-    Value: 6495712
+    Value: 6857696
   Exists: 1
 --- !u!114 &6754669109467004922
 MonoBehaviour:
@@ -2161,6 +2084,7 @@ MonoBehaviour:
     Data3: -1463451463
     Data4: 2065859258
   Banks:
+  - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -2184,10 +2108,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Voice.bank
   Name: Voice
   StudioPath: bank:/Voice
-  lastModified: 638420486675718060
+  lastModified: 638420532185347188
   FileSizes:
   - Name: Desktop
-    Value: 3882752
+    Value: 3905344
   Exists: 1
 --- !u!114 &7629027655355223908
 MonoBehaviour:
@@ -2329,6 +2253,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6504
+--- !u!114 &8763074106671439058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/shotgun/shotgun_equip
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/shotgun/shotgun_equip
+  Guid:
+    Data1: 1980784114
+    Data2: 1187243985
+    Data3: -1470849645
+    Data4: -1062647132
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 828
 --- !u!114 &8881565234032998584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2344,10 +2296,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638420486674997350
+  lastModified: 638420545358537584
   FileSizes:
   - Name: Desktop
-    Value: 283872
+    Value: 599392
   Exists: 1
 --- !u!114 &9074305147904866416
 MonoBehaviour:

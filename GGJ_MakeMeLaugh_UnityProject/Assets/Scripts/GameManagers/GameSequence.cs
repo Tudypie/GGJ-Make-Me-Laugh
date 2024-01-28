@@ -6,7 +6,6 @@ using System;
 using GameJam.Audio;
 using UnityEngine.Events;
 using FMODUnity;
-using static Autodesk.Fbx.FbxAnimCurveDef;
 using GameJam.Input;
 
 public class GameSequence : MonoBehaviour
@@ -203,7 +202,7 @@ public class GameSequence : MonoBehaviour
                     StartCoroutine(ShowMonitorText(sequences[currentSequenceNum].messages[currentMessageNum].text));
                     if (sequences[currentSequenceNum].messages[currentMessageNum].isJoke)
                     {
-                        Invoke(nameof(PlayLaugh), 2f);
+                        Invoke(nameof(PlayLaugh), 3.5f);
                     }
                     if (sequences[currentSequenceNum].messages[currentMessageNum].shutDownMonitor)
                     {

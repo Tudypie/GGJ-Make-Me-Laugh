@@ -1370,6 +1370,140 @@ PrefabInstance:
     - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
         type: 3}
       propertyPath: sequences.Array.data[7].messages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[4].text
+      value: "I will proceed with the first joke.\n\nA coder enters a 48 hour gamejam.\nThankfully,
+        he gets 8 hours of sleep.\_\n\nAfter the gamejam."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[7].text
+      value: 'Why is six afraid of seven? Because seven eight nine............................................................
+
+
+        And
+        because seven is a six offender.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].text
+      value: 'Finally, you can see a door!
+
+        Above the door, you notice a
+        sign. "105001". You can''t help but wonder what this number signifies.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[1].text
+      value: Two objects seem to have appeared in the before empty room. A white
+        table and... what appears to be a gramophone.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].text
+      value: Ligma Balls
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[3].text
+      value: 'A cowboy walks into a bar. He pulls out his revolver and says "Hey
+        barman, give me a shot".
+
+        The barman pulls a shotgun from under the
+        counter and says "Is this what you''re looking for?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].text
+      value: 'Why did the chicken cross the road?
+
+
+        Just BEAKause!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].text
+      value: 'What do you call a fake noodle?
+
+
+        An Impasta!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].isJoke
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].isJoke
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[16].author
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].duration
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[1].autoNext
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[2].autoNext
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[2].duration
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[0].duration
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[1].duration
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[2].duration
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[3].duration
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[4].duration
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[5].duration
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[6].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[7].duration
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
@@ -1379,8 +1513,248 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
         type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[10].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[12].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[14].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[15].duration
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[17].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[18].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[19].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[20].duration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[21].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[22].duration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[23].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[2].triggerDelay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[16].messages.Array.data[1].triggerDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
       propertyPath: sequences.Array.data[16].messages.Array.data[3].triggerDelay
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[4].messages.Array.data[0].shutDownMonitor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].audioEvent.Path
+      value: event:/VoiceLines/Maze/you_can_see_a_door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].audioEvent.Path
+      value: event:/SFX/shocked
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[5].shutDownMonitor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[10].messages.Array.data[0].shutDownMonitor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[2].audioEvent.Path
+      value: event:/VoiceLines/End/you_come_up_with_a_plan
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].audioEvent.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].audioEvent.Path
+      value: event:/SFX/sus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[3].messages.Array.data[12].shutDownMonitor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[16].audioEvent.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].audioEvent.Guid.Data1
+      value: 1251097672
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].audioEvent.Guid.Data2
+      value: 1287343177
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].audioEvent.Guid.Data3
+      value: -2127284857
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[7].messages.Array.data[3].audioEvent.Guid.Data4
+      value: -911122423
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].audioEvent.Guid.Data1
+      value: -2059481270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].audioEvent.Guid.Data2
+      value: 1263173530
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].audioEvent.Guid.Data3
+      value: 927134645
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[9].messages.Array.data[1].audioEvent.Guid.Data4
+      value: 290634494
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[2].audioEvent.Guid.Data1
+      value: 1353187909
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[2].audioEvent.Guid.Data2
+      value: 1187962204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[2].audioEvent.Guid.Data3
+      value: 1374695335
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[2].audioEvent.Guid.Data4
+      value: -58819093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].audioEvent.Guid.Data1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].audioEvent.Guid.Data2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].audioEvent.Guid.Data3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[8].audioEvent.Guid.Data4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].audioEvent.Guid.Data1
+      value: -1545891787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].audioEvent.Guid.Data2
+      value: 1297733093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].audioEvent.Guid.Data3
+      value: 1040918967
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[9].audioEvent.Guid.Data4
+      value: -1808565984
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[16].audioEvent.Guid.Data1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[16].audioEvent.Guid.Data2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[16].audioEvent.Guid.Data3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[15].messages.Array.data[16].audioEvent.Guid.Data4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: sequences.Array.data[8].messages.Array.data[2].eventToTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4820759814842357840, guid: 02320407486514f4fbdea2d502e6adba,
         type: 3}
