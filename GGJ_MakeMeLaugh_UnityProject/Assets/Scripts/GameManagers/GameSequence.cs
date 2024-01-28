@@ -132,9 +132,10 @@ public class GameSequence : MonoBehaviour
 
     public void Die(int deathIndex)
     {
-        currentMessageNum = 0;
         StopAllCoroutines();
+        CancelInvoke();
         audioPlayer.Stop();
+        currentMessageNum = 0;
         StartCoroutine(PlayerDie(deathIndex));
     }
 

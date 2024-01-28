@@ -354,8 +354,8 @@ MonoBehaviour:
     Data3: -132231250
     Data4: -1410355582
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -438,8 +438,8 @@ MonoBehaviour:
     Data3: -1212718188
     Data4: -634688155
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -494,8 +494,8 @@ MonoBehaviour:
     Data3: -1316353919
     Data4: -1355475820
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -710,8 +710,8 @@ MonoBehaviour:
     Data3: 862110123
     Data4: -725097854
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -901,7 +901,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638420040198112526
+  lastModified: 638420083522420837
   FileSizes:
   - Name: Desktop
     Value: 4744
@@ -953,8 +953,8 @@ MonoBehaviour:
     Data3: -1509826941
     Data4: -1630207080
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   - {fileID: 6747982855619543671}
   StringsBanks:
   - {fileID: -640988751806318771}
-  cacheTime: 638420040198112526
+  cacheTime: 638420083522842968
   cacheVersion: 131616
 --- !u!114 &286878510645273116
 MonoBehaviour:
@@ -1245,8 +1245,8 @@ MonoBehaviour:
     Data3: -669894754
     Data4: 1183849084
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1301,8 +1301,8 @@ MonoBehaviour:
     Data3: -1470849645
     Data4: -1062647132
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1329,8 +1329,8 @@ MonoBehaviour:
     Data3: -1003847234
     Data4: 728430054
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1433,8 +1433,8 @@ MonoBehaviour:
     Data3: -841795150
     Data4: -2116940129
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1489,8 +1489,8 @@ MonoBehaviour:
     Data3: -127297604
     Data4: 705773398
   Banks:
-  - {fileID: 8881565234032998584}
   - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1905,7 +1905,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638420040198072456
+  lastModified: 638420083522380816
   FileSizes:
   - Name: Desktop
     Value: 4587392
@@ -2149,7 +2149,7 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638420026577882932
+  lastModified: 638420083522842968
   FileSizes:
   - Name: Desktop
     Value: 241088
