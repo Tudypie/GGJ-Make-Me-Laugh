@@ -71,6 +71,24 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextSequence"",
+                    ""type"": ""Button"",
+                    ""id"": ""b85e9df6-641f-464a-b390-d052510fec51"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextMessage"",
+                    ""type"": ""Button"",
+                    ""id"": ""3f08db09-b898-4007-a695-f92786703189"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -192,6 +210,28 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0d0cf3de-6711-4aea-829f-90e5e605da04"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextSequence"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3c4625d1-136e-42b2-a8fd-49100149c9de"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextMessage"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -442,6 +482,8 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
+        m_Player_NextSequence = m_Player.FindAction("NextSequence", throwIfNotFound: true);
+        m_Player_NextMessage = m_Player.FindAction("NextMessage", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_AnyKey = m_UI.FindAction("AnyKey", throwIfNotFound: true);
@@ -512,6 +554,8 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Shoot;
+    private readonly InputAction m_Player_NextSequence;
+    private readonly InputAction m_Player_NextMessage;
     public struct PlayerActions
     {
         private @InputMaster m_Wrapper;
@@ -521,6 +565,8 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
+        public InputAction @NextSequence => m_Wrapper.m_Player_NextSequence;
+        public InputAction @NextMessage => m_Wrapper.m_Player_NextMessage;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -545,6 +591,12 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
             @Shoot.started += instance.OnShoot;
             @Shoot.performed += instance.OnShoot;
             @Shoot.canceled += instance.OnShoot;
+            @NextSequence.started += instance.OnNextSequence;
+            @NextSequence.performed += instance.OnNextSequence;
+            @NextSequence.canceled += instance.OnNextSequence;
+            @NextMessage.started += instance.OnNextMessage;
+            @NextMessage.performed += instance.OnNextMessage;
+            @NextMessage.canceled += instance.OnNextMessage;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -564,6 +616,12 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
             @Shoot.started -= instance.OnShoot;
             @Shoot.performed -= instance.OnShoot;
             @Shoot.canceled -= instance.OnShoot;
+            @NextSequence.started -= instance.OnNextSequence;
+            @NextSequence.performed -= instance.OnNextSequence;
+            @NextSequence.canceled -= instance.OnNextSequence;
+            @NextMessage.started -= instance.OnNextMessage;
+            @NextMessage.performed -= instance.OnNextMessage;
+            @NextMessage.canceled -= instance.OnNextMessage;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -642,6 +700,8 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
+        void OnNextSequence(InputAction.CallbackContext context);
+        void OnNextMessage(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

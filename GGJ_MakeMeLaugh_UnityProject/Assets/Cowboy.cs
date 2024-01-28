@@ -16,7 +16,7 @@ public class Cowboy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        EnterBar();
+
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class Cowboy : MonoBehaviour
         }   
     }
 
-    void EnterBar()
+    public void EnterBar()
     {
         isWalking = true;
         Invoke(nameof(Shoot), walkDistance);

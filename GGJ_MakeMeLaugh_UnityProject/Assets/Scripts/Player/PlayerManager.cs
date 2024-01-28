@@ -8,8 +8,6 @@ namespace GameJam.Player
     public class PlayerManager : MonoBehaviour
     {
 		public float defaultMass;
-
-		public StudioEventEmitter PlayerAudio;
 		public CharacterController PlayerControler { get; private set; }
 		public PlayerFootsteps PlayerFootsteps { get; private set; }
 		public PlayerMovement PlayerMovement { get; private set; }
@@ -37,7 +35,7 @@ namespace GameJam.Player
 
 		void Update()
 		{
-			if (InputManager.INPUT.UI.Back.WasPressedThisFrame()) LoadScene("MainMenu");
+			//if (InputManager.INPUT.UI.Back.WasPressedThisFrame()) LoadScene("MainMenu");
 		}
 
 		public void LoadScene(string sceneName) => SceneManager.LoadScene(sceneName); // Called by event

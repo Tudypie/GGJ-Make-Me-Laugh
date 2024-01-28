@@ -7,6 +7,7 @@ using GameJam.Audio;
 using UnityEngine.Events;
 using FMODUnity;
 using static Autodesk.Fbx.FbxAnimCurveDef;
+using GameJam.Input;
 
 public class GameSequence : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class GameSequence : MonoBehaviour
         public string text;
         public float duration;
         public bool autoNext;
+        public bool isJoke;
         public EventReference audioEvent;
         public UnityEvent eventToTrigger;
         public float triggerDelay;
@@ -42,6 +44,7 @@ public class GameSequence : MonoBehaviour
     {
         [TextArea(3, 7)]
         public string message;
+        public float subtitlesDelay;
         public float duration;
         public EventReference audioEvent;
     }
@@ -79,11 +82,17 @@ public class GameSequence : MonoBehaviour
     private void Update()
     {
         monitorText = GameObject.FindGameObjectWithTag("MonitorText").gameObject.GetComponent<TMP_Text>();
+
+        if (InputManager.INPUT.Player.NextMessage.IsPressed()) NextMessage();
+
+        if (InputManager.INPUT.Player.NextSequence.IsPressed()) NextSequence();
     }
 
     private void HideSubtitles() => subtitlesText.text = "";
 
     private void TriggerMessageEvent() => sequences[currentSequenceNum].messages[currentMessageNum].eventToTrigger?.Invoke();
+
+    private void PlayLaugh() => AudioManager.Instance.PlayAudio(FMODEvents.Instance.playerLaugh);
 
     public void NextMessage(int increment = 1)
     {
@@ -125,15 +134,16 @@ public class GameSequence : MonoBehaviour
     {
         currentMessageNum = 0;
         StopAllCoroutines();
+        audioPlayer.Stop();
         StartCoroutine(PlayerDie(deathIndex));
     }
 
     IEnumerator PlayerDie(int deathIndex)
     {
         blackScreen.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        subtitlesText.text = deaths[deathIndex].message;
         AudioManager.Instance.PlayAudio(deaths[deathIndex].audioEvent);
+        yield return new WaitForSeconds(deaths[deathIndex].subtitlesDelay);
+        subtitlesText.text = deaths[deathIndex].message;
         yield return new WaitForSeconds(deaths[deathIndex].duration);
         blackScreen.SetActive(false);
         SavingManager.Instance.LoadGame();
@@ -178,8 +188,11 @@ public class GameSequence : MonoBehaviour
             {
                 if(sequences[currentSequenceNum].messages[currentMessageNum].author == author.AI)
                 {
-                    //monitorText.text = sequences[currentSequenceNum].messages[currentMessageNum].text;
                     StartCoroutine(ShowMonitorText(sequences[currentSequenceNum].messages[currentMessageNum].text));
+                    if (sequences[currentSequenceNum].messages[currentMessageNum].isJoke)
+                    {
+                        Invoke(nameof(PlayLaugh), 2f);
+                    }
                 } 
                 else
                 {
@@ -188,16 +201,14 @@ public class GameSequence : MonoBehaviour
                     audioPlayer.EventReference = sequences[currentSequenceNum].messages[currentMessageNum].audioEvent;
                     audioPlayer.Play();
                     //StartCoroutine(ShowSubtitlesText(sequences[currentSequenceNum].messages[currentMessageNum].text));
-                    //AudioManager.Instance.PlayAudio(sequences[currentSequenceNum].messages[currentMessageNum].audioClip);
                 }
 
                 Invoke(nameof(TriggerMessageEvent), sequences[currentSequenceNum].messages[currentMessageNum].triggerDelay);
-                //Invoke(nameof(HideSubtitles), sequences[currentSequenceNum].messages[currentMessageNum].audioClip.length);
 
                 if (sequences[currentSequenceNum].messages[currentMessageNum].autoNext)
                 {
                     Debug.Log("waiting for message to end");
-                    yield return new WaitForSeconds(sequences[currentSequenceNum].messages[currentMessageNum].duration - 1);
+                    yield return new WaitForSeconds(sequences[currentSequenceNum].messages[currentMessageNum].duration);
                     HideSubtitles();
                     yield return new WaitForSeconds(1f);
                     currentMessageNum++;
@@ -206,7 +217,7 @@ public class GameSequence : MonoBehaviour
                 else
                 {
                     Debug.Log("waiting for next message");
-                    Invoke(nameof(HideSubtitles), sequences[currentSequenceNum].messages[currentMessageNum].duration - 1);
+                    Invoke(nameof(HideSubtitles), sequences[currentSequenceNum].messages[currentMessageNum].duration);
                     yield return new WaitForSeconds(99999f);
                 }
             }

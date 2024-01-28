@@ -12,7 +12,6 @@ namespace GameJam.Player
 		[Header("Footsteps Config:")]
 		public float deafultTimeBetwenFootsteps;
 		[SerializeField] private LayerMask groundTypeMask;
-		[SerializeField] private EventReference footstepSound;
 
         private float timeBetwenFootsteps;
 		private bool overrideSurface;
@@ -40,7 +39,7 @@ namespace GameJam.Player
 
 			if (timeBetwenFootsteps <= 0f && playerManager.PlayerMovement.IsGrounded && !playerManager.PlayerMovement.IsOnLadder)
 			{
-				AudioManager.Instance.PlayAudio(footstepSound);
+				AudioManager.Instance.PlayAudio(FMODEvents.Instance.playerFootsteps);
 				timeBetwenFootsteps = deafultTimeBetwenFootsteps;
 			}
 		}

@@ -2,6 +2,7 @@ using GameJam.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SavingManager : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class SavingManager : MonoBehaviour
     private void Start()
     {
         player = PlayerManager.Instance.gameObject.transform;
-        SaveGame();
+        SaveGame("WhiteRoom");
     }
 
     public void SaveGame(string currentScene = "")
@@ -34,7 +35,12 @@ public class SavingManager : MonoBehaviour
 
     public void LoadGame()
     {
-        if(savedSceneName != "") SceneManagement.Instance.LoadScene(savedSceneName);
+        if (savedSceneName != "")
+        {
+            SceneManagement.Instance.UnloadScene(savedSceneName);
+            SceneManagement.Instance.LoadScene(savedSceneName);
+        }
+
         GameSequence.Instance.currentSequenceNum = savedGameSequence;
         player.position = savedPlayerPosition;
         player.rotation = savedPlayerRotation;

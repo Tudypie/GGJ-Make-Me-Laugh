@@ -10,13 +10,21 @@ namespace GameJam.Audio
     {
         public static FMODEvents Instance { get; private set; }
 
-        [Header("Doors")]
-        public EventReference doorOpen;
-        public EventReference doorClose;
+
+        [Header("Player")]
+        public EventReference playerFootsteps;
+        public EventReference playerJump;
+        public EventReference playerLaugh;
 
         [Header("Shotgun")]
         public EventReference shotgunEquip;
         public EventReference shotgunShoot;
+
+        [Header("Environment")]
+        public EventReference doorOpen;
+        public EventReference doorClose;
+        public EventReference spikesUp;
+
 
         void Awake()
         {

@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: f2052d26698346b4eb5b6699458b4054, type: 2}
+  gameEvent: {fileID: 11400000, guid: f83c81ccfc246004fb7a432bff82d93b, type: 2}
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: f2052d26698346b4eb5b6699458b4054, type: 2}
+  gameEvent: {fileID: 11400000, guid: 9e30c8348a74b4a4a8a2756a586c05ed, type: 2}
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:

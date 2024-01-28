@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{c1b13af9-17b0-4023-83de-01a69803d59e}">
 		<property name="name">
-			<value>door_close</value>
+			<value>env_door_close</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{b645b67c-d6cd-42cd-a282-51c57270d405}</destination>
+			<destination>{3abc3a7a-0c25-4cb4-87e2-e989446d4e9e}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e4f87e9d-592f-4873-a6bb-1e7e6bd3399b}</destination>
@@ -54,17 +54,24 @@
 			<destination>{99ddd99f-4483-4cba-9a29-f7bc77bc956d}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{1c44366a-552f-4ed5-9727-e88bae8f4535}</destination>
+			<destination>{b3a510ea-d906-49fb-947f-0b462ccb7df5}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{712c7ca9-d74f-41c2-9f41-a8d2cf145ef2}" />
 	<object class="MarkerTrack" id="{ed88d8db-e3d2-403c-b243-02c4547656ba}" />
 	<object class="GroupTrack" id="{cf9f8fcd-5c35-449f-99d4-7de874ddf69a}">
+		<relationship name="modules">
+			<destination>{df740111-6e3b-4034-90b3-6a4c9b07402e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{7250d412-868c-40d9-9ff9-5b1418e7aa17}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{d54e8fe3-9ad4-490d-98bf-714394778c03}" />
+	<object class="Timeline" id="{d54e8fe3-9ad4-490d-98bf-714394778c03}">
+		<relationship name="modules">
+			<destination>{df740111-6e3b-4034-90b3-6a4c9b07402e}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{aac55325-fb51-40fc-bdad-dd0fb464b8c9}">
 		<relationship name="effectChain">
 			<destination>{bd59be1e-68c5-4002-989f-54a86018fead}</destination>
@@ -82,6 +89,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{99ddd99f-4483-4cba-9a29-f7bc77bc956d}" />
+	<object class="SingleSound" id="{df740111-6e3b-4034-90b3-6a4c9b07402e}">
+		<property name="length">
+			<value>1.5639999999999998</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.20000000000000007</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{8ecaed20-9d6c-4f9d-bebb-20c709bed3d2}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{7250d412-868c-40d9-9ff9-5b1418e7aa17}">
 		<property name="name">
 			<value>Audio 1</value>

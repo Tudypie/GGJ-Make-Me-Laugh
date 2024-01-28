@@ -664,7 +664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9f84ded385d8a4da77d5da3ee08d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMass: -30
+  defaultMass: -50
   PlayerAudio: {fileID: 0}
 --- !u!114 &7302158613498614425
 MonoBehaviour:
@@ -686,7 +686,7 @@ MonoBehaviour:
       Data3: -1212718188
       Data4: -634688155
     Path: event:/SFX/Player/player_jump
-  jumpHeight: 1.2
+  jumpHeight: 2
   groundCheckTransform: {fileID: 877209971}
   groundCheckMask:
     serializedVersion: 2

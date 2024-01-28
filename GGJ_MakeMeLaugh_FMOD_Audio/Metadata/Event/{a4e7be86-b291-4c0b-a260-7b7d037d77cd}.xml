@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{a4e7be86-b291-4c0b-a260-7b7d037d77cd}">
 		<property name="name">
-			<value>WhiteRoom</value>
+			<value>white_room_soundtrack</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -53,7 +53,7 @@
 			<destination>{28de4523-4c5a-45e4-a486-91a2eec56faf}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{1c44366a-552f-4ed5-9727-e88bae8f4535}</destination>
+			<destination>{87a894bc-296b-48ff-bbad-7b094c0c9d7c}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{e372031d-6571-46c2-a7ba-79cf11b320f7}" />

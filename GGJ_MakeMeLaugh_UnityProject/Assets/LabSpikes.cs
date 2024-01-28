@@ -1,3 +1,4 @@
+using GameJam.Audio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,7 @@ public class LabSpikes : MonoBehaviour
 
     void KillPlayer()
     {
+        AudioManager.Instance.PlayAudio(FMODEvents.Instance.spikesUp);
         if(isInTrigger)
         {
             GameSequence.Instance.Die(1);
