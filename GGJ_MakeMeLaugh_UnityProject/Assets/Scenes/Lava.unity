@@ -5574,7 +5574,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: b959c005eea59f946a9d9e8f19f5121b, type: 2}
         m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Invoke
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
