@@ -7,6 +7,8 @@ public class Cowboy : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private Jukebox jukebox;
 
+    [SerializeField] private GameObject revolver;
+
     public float walkDistance;
     public bool isWalking = false;
 
@@ -16,7 +18,7 @@ public class Cowboy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class Cowboy : MonoBehaviour
     public void EnterBar()
     {
         isWalking = true;
+        revolver.SetActive(false);
         Invoke(nameof(Shoot), walkDistance);
     }
 
@@ -42,8 +45,14 @@ public class Cowboy : MonoBehaviour
             // transform.rotation = new Quaternion(0f, 1f, 0f, 1f);
             transform.Rotate(new Vector3(0f,90f,0f));
             animator.SetTrigger("isShooting");
+            Invoke(nameof(ShowRevolver), 1.0f);
             Invoke(nameof(KillPlayer), 2.8f);
         }
+    }
+
+    void ShowRevolver()
+    {
+        revolver.SetActive(true);
     }
 
     void KillPlayer()
