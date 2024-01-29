@@ -1007,8 +1007,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
         type: 3}
+<<<<<<< Updated upstream
       propertyPath: monitorBeeps.Path
       value: event:/SFX/monitor_beeps
+=======
+      propertyPath: endGameDeath.Path
+      value: event:/Death/end_game_death
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
         type: 3}
@@ -1117,6 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
         type: 3}
+<<<<<<< Updated upstream
       propertyPath: monitorBeeps.Guid.Data1
       value: -1777029957
       objectReference: {fileID: 0}
@@ -1134,6 +1140,25 @@ PrefabInstance:
         type: 3}
       propertyPath: monitorBeeps.Guid.Data4
       value: 206670775
+=======
+      propertyPath: endGameDeath.Guid.Data1
+      value: -2099675304
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
+        type: 3}
+      propertyPath: endGameDeath.Guid.Data2
+      value: 1270910724
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
+        type: 3}
+      propertyPath: endGameDeath.Guid.Data3
+      value: 553122719
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
+        type: 3}
+      propertyPath: endGameDeath.Guid.Data4
+      value: 470958855
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5713406814092665361, guid: 50691fdd777f3a7408e72fc6fde67d5f,
         type: 3}
@@ -1282,6 +1307,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 299253666}
+    - target: {fileID: 7490183007669604730, guid: 77e4d85e02ff8894b87854c9412e80ae,
+        type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 7022003236799248106, guid: 22b43f9bd198581418d7659d727b4ed5,
+        type: 3}
     - target: {fileID: 7875879826661870565, guid: 77e4d85e02ff8894b87854c9412e80ae,
         type: 3}
       propertyPath: m_Name
@@ -1408,6 +1439,7 @@ PrefabInstance:
       objectReference: {fileID: 1168102764}
     - target: {fileID: 5028929867988885377, guid: 02320407486514f4fbdea2d502e6adba,
         type: 3}
+<<<<<<< Updated upstream
       propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1577491443}
@@ -1416,6 +1448,21 @@ PrefabInstance:
       propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1577491443}
+=======
+      propertyPath: sequences.Array.data[8].messages.Array.data[1].autoNext
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6451368593548127722, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 314479548}
+    - target: {fileID: 6451368593548127722, guid: 02320407486514f4fbdea2d502e6adba,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8791635762240615888}
+>>>>>>> Stashed changes
     - target: {fileID: 6620869542417128514, guid: 02320407486514f4fbdea2d502e6adba,
         type: 3}
       propertyPath: m_Name
@@ -1544,6 +1591,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef8e5fab9a675eb4c98f1c7ff7f2c8e2, type: 3}
+--- !u!114 &8791635762240615888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3997142022180309013, guid: ef8e5fab9a675eb4c98f1c7ff7f2c8e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8791635762240615887}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11300bbe99877743a3e9105284c6af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

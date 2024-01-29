@@ -21,8 +21,6 @@ namespace GameJam.Player
         {
 			Instance = this;
 
-			PlayerCamera = Camera.main;
-
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
 
@@ -35,9 +33,16 @@ namespace GameJam.Player
 
 		void Update()
 		{
-			//if (InputManager.INPUT.UI.Back.WasPressedThisFrame()) LoadScene("MainMenu");
-		}
+            PlayerCamera = Camera.main;
+            //if (InputManager.INPUT.UI.Back.WasPressedThisFrame()) LoadScene("MainMenu");
+        }
 
-		public void LoadScene(string sceneName) => SceneManager.LoadScene(sceneName); // Called by event
+		public void LoadSavedPosition()
+		{
+			PlayerMovement.enabled = false;
+			transform.position = SavingManager.Instance.savedPlayerPosition;
+			transform.rotation = SavingManager.Instance.savedPlayerRotation;
+			PlayerMovement.enabled = true;
+        }
 	}
 }

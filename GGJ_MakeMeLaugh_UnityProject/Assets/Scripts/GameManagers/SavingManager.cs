@@ -10,6 +10,7 @@ public class SavingManager : MonoBehaviour
     public int savedGameSequence;
     public int savedSequenceMessage;
     public Transform player;
+    public GameObject playerPrefab;
     public Vector3 savedPlayerPosition;
     public Quaternion savedPlayerRotation;
 
@@ -45,7 +46,9 @@ public class SavingManager : MonoBehaviour
 
         GameSequence.Instance.currentSequenceNum = savedGameSequence;
         GameSequence.Instance.currentMessageNum = savedSequenceMessage;
-        player.position = savedPlayerPosition;
-        player.rotation = savedPlayerRotation;
+        GameObject newPlayer = Instantiate(playerPrefab, savedPlayerPosition, savedPlayerRotation);
+        Destroy(player.gameObject);
+        player = newPlayer.transform;
+        //PlayerManager.Instance.LoadSavedPosition();
     }
 }

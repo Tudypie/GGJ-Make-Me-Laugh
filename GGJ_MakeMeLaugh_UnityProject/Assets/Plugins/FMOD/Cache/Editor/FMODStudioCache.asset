@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!114 &-9183833226741325068
+=======
+--- !u!114 &-9126947580749537318
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,6 +14,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/AI_1/seems_simple_enough
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/AI_1/seems_simple_enough
@@ -768,11 +773,240 @@ MonoBehaviour:
   m_Name: event:/SFX/Player/player_jump
   m_EditorClassIdentifier: 
   Path: event:/SFX/Player/player_jump
+=======
+  m_Name: event:/VoiceLines/End/you_feel_relieved
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/you_feel_relieved
+>>>>>>> Stashed changes
   Guid:
-    Data1: -381396710
-    Data2: 1226770865
-    Data3: -1212718188
-    Data4: -634688155
+    Data1: 1738384846
+    Data2: 1159438842
+    Data3: 210590611
+    Data4: -1694437103
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6373
+--- !u!114 &-9045894587782585774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Bar/bar_like_in_the_joke
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Bar/bar_like_in_the_joke
+  Guid:
+    Data1: 735290278
+    Data2: 1293841626
+    Data3: -1220178517
+    Data4: -1063315676
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4702
+--- !u!114 &-8946728012687149249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/DeadEnd/dead_end
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/DeadEnd/dead_end
+  Guid:
+    Data1: 1330421512
+    Data2: 1199577183
+    Data3: -204541766
+    Data4: 1698456994
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2951
+--- !u!114 &-8714738844932915171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/i_am_brilliant
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/i_am_brilliant
+  Guid:
+    Data1: -1821962959
+    Data2: 1243177644
+    Data3: 1615604386
+    Data4: -500764896
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6556
+--- !u!114 &-8376986269881330444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/plan_into_action
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/plan_into_action
+  Guid:
+    Data1: 1572146977
+    Data2: 1216026096
+    Data3: -1492130373
+    Data4: 1376748022
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2481
+--- !u!114 &-8076238560072751458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/JukeboxRoom/once_again_traverse_the_corridor
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/JukeboxRoom/once_again_traverse_the_corridor
+  Guid:
+    Data1: 1212650830
+    Data2: 1253211413
+    Data3: 1800270271
+    Data4: 1096460270
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8097
+--- !u!114 &-7570672629444380702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Bar/the_door_opens
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Bar/the_door_opens
+  Guid:
+    Data1: 1549079188
+    Data2: 1267018371
+    Data3: 830459039
+    Data4: -1638461633
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7288
+--- !u!114 &-7330021413515211594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/LeaveRoom/entering_the_room
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/LeaveRoom/entering_the_room
+  Guid:
+    Data1: -890680784
+    Data2: 1138951501
+    Data3: -1071290985
+    Data4: -1913568724
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5146
+--- !u!114 &-7032996460786000042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/env_door_open
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/env_door_open
+  Guid:
+    Data1: 1786693441
+    Data2: 1318141808
+    Data3: -1003847234
+    Data4: 728430054
   Banks:
   - {fileID: 6747982855619543671}
   - {fileID: 8881565234032998584}
@@ -782,8 +1016,124 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 350
 --- !u!114 &-1803708076466566798
+=======
+  Length: 1728
+--- !u!114 &-6441744950569068520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/JukeboxRoom/as_the_song_ends
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/JukeboxRoom/as_the_song_ends
+  Guid:
+    Data1: 1895894614
+    Data2: 1315097457
+    Data3: 553546389
+    Data4: -960021174
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6713
+--- !u!114 &-6349366345616030157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Death/white_room_death
+  m_EditorClassIdentifier: 
+  Path: event:/Death/white_room_death
+  Guid:
+    Data1: 1676491086
+    Data2: 1112658747
+    Data3: -1463451463
+    Data4: 2065859258
+  Banks:
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6175
+--- !u!114 &-5968891515174226917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Bar/the_once_white_room
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Bar/the_once_white_room
+  Guid:
+    Data1: 2026133484
+    Data2: 1325178630
+    Data3: -1423078525
+    Data4: 565072752
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9743
+--- !u!114 &-5539030731476880373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/AI_3/are_the_jokes_intentionally_worse
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_3/are_the_jokes_intentionally_worse
+  Guid:
+    Data1: 872340899
+    Data2: 1342023200
+    Data3: 232711313
+    Data4: 1854472694
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3709
+--- !u!114 &-5422619600764070919
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -802,7 +1152,11 @@ MonoBehaviour:
     Data3: -1080840031
     Data4: 767962000
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
+=======
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -811,7 +1165,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2246
+<<<<<<< Updated upstream
 --- !u!114 &-1603473363384603570
+=======
+--- !u!114 &-4955717673447003314
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -821,6 +1179,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/End/i_am_the_one_who_didnt_laugh
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/End/i_am_the_one_who_didnt_laugh
@@ -831,6 +1190,18 @@ MonoBehaviour:
     Data4: 1745921085
   Banks:
   - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/VoiceLines/AI_1/that_didnt_hit_the_mark
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_1/that_didnt_hit_the_mark
+  Guid:
+    Data1: 2094239220
+    Data2: 1283554453
+    Data3: 2059920543
+    Data4: -1714756029
+  Banks:
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -838,8 +1209,13 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 5381
 --- !u!114 &-1249730381384853596
+=======
+  Length: 5668
+--- !u!114 &-4748010137897604435
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -849,6 +1225,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/monitor_beeps
   m_EditorClassIdentifier: 
   Path: event:/SFX/monitor_beeps
@@ -862,12 +1239,116 @@ MonoBehaviour:
   - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 1
+=======
+  m_Name: event:/VoiceLines/AI_1/you_find_the_Joke_funny
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_1/you_find_the_Joke_funny
+  Guid:
+    Data1: -1112195815
+    Data2: 1284749350
+    Data3: -114263934
+    Data4: 1733953607
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+>>>>>>> Stashed changes
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 670
 --- !u!114 &-1116298541700880603
+=======
+  Length: 1671
+--- !u!114 &-4412965754232803092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Death/end_game_death
+  m_EditorClassIdentifier: 
+  Path: event:/Death/end_game_death
+  Guid:
+    Data1: -2099675304
+    Data2: 1270910724
+    Data3: 553122719
+    Data4: 470958855
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3552
+--- !u!114 &-4278227394929683075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/player_laugh
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/player_laugh
+  Guid:
+    Data1: 1878427992
+    Data2: 1221953065
+    Data3: -1316353919
+    Data4: -1355475820
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &-4116220385802133781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/LeaveRoom/the_door_opens
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/LeaveRoom/the_door_opens
+  Guid:
+    Data1: 1873954058
+    Data2: 1295670724
+    Data3: -326753871
+    Data4: 1794361438
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6974
+--- !u!114 &-4017163995463009005
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -895,7 +1376,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 254
+<<<<<<< Updated upstream
 --- !u!114 &-1000063932778623028
+=======
+--- !u!114 &-3715469523001856553
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -905,6 +1390,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/WakeUp/you_wake_up
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/WakeUp/you_wake_up
@@ -915,15 +1401,26 @@ MonoBehaviour:
     Data4: -766693500
   Banks:
   - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/VoiceLines/Maze/maze_joke
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Maze/maze_joke
+  Guid:
+    Data1: 816451991
+    Data2: 1147813002
+    Data3: 226639771
+    Data4: -1892462608
+  Banks:
+  - {fileID: 3469961291755295401}
   - {fileID: 6747982855619543671}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1854
---- !u!114 &-640988751806318771
+  Length: 11284
+--- !u!114 &-3693159668322688687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -932,18 +1429,417 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/what_no_you_did_laugh
   m_EditorClassIdentifier: 
-  Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638420621341794895
-  FileSizes:
-  - Name: Desktop
-    Value: 5048
-  Exists: 1
---- !u!114 &-600976397687980955
+  Path: event:/VoiceLines/End/what_no_you_did_laugh
+  Guid:
+    Data1: 1033703323
+    Data2: 1246651929
+    Data3: -878400883
+    Data4: -793711195
+  Banks:
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< Updated upstream
+  Length: 1854
+=======
+  Length: 5041
+--- !u!114 &-3659731143066593731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/WakeUp/you_take_a_look
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/WakeUp/you_take_a_look
+  Guid:
+    Data1: -1108485526
+    Data2: 1336713790
+    Data3: -1359628117
+    Data4: 753320367
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5407
+--- !u!114 &-3495941258805148651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/StartLava/the_door_opens
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/StartLava/the_door_opens
+  Guid:
+    Data1: -683119961
+    Data2: 1142533392
+    Data3: 1824162745
+    Data4: -1909578746
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5929
+--- !u!114 &-2914242216855964800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/AI_1/seems_simple_enough
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_1/seems_simple_enough
+  Guid:
+    Data1: -785598882
+    Data2: 1153424570
+    Data3: -141748824
+    Data4: 1045684752
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1332
+--- !u!114 &-2740788545584009690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/NotLeaveRoom/without_much_consideration
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/NotLeaveRoom/without_much_consideration
+  Guid:
+    Data1: 679703548
+    Data2: 1104437131
+    Data3: 597315484
+    Data4: 2131382582
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14628
+--- !u!114 &-2733979208041447664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Death/spike_death
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Death/spike_death
+  Guid:
+    Data1: 382995837
+    Data2: 1330281525
+    Data3: -1618210638
+    Data4: -1017202797
+  Banks:
+  - {fileID: 3469961291755295401}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3552
+--- !u!114 &-2681199839351663228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/env_monitor_off
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/env_monitor_off
+  Guid:
+    Data1: 412050527
+    Data2: 1153094570
+    Data3: -132231250
+    Data4: -1410355582
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 522
+--- !u!114 &-2455022749389625430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Lava/you_made_it
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Lava/you_made_it
+  Guid:
+    Data1: -1973938791
+    Data2: 1300384838
+    Data3: -537627207
+    Data4: -1111689119
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3683
+--- !u!114 &-2197236827253903961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Death/lava_death
+  m_EditorClassIdentifier: 
+  Path: event:/Death/lava_death
+  Guid:
+    Data1: -1926984151
+    Data2: 1145076616
+    Data3: 775882396
+    Data4: 504144634
+  Banks:
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8298
+--- !u!114 &-2152651623291878612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Death/bar_death
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Death/bar_death
+  Guid:
+    Data1: 1628006202
+    Data2: 1074992701
+    Data3: 1516596669
+    Data4: -585092577
+  Banks:
+  - {fileID: 3469961291755295401}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10433
+--- !u!114 &-1930257717376253579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/StartMaze/however_behind_it
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/StartMaze/however_behind_it
+  Guid:
+    Data1: -1381197586
+    Data2: 1272379503
+    Data3: -988101238
+    Data4: 1902369080
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6504
+--- !u!114 &-1658882990685895443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/env_door_close
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/env_door_close
+  Guid:
+    Data1: -1045349639
+    Data2: 1076041648
+    Data3: -1509826941
+    Data4: -1630207080
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1564
+--- !u!114 &-1569231255141142191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/WakeUp/open_the_door
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/WakeUp/open_the_door
+  Guid:
+    Data1: -907338137
+    Data2: 1156162014
+    Data3: 585440191
+    Data4: -1801629288
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3552
+--- !u!114 &-1536280830631738401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Death/bar_death
+  m_EditorClassIdentifier: 
+  Path: event:/Death/bar_death
+  Guid:
+    Data1: 1628006202
+    Data2: 1074992701
+    Data3: 1516596669
+    Data4: -585092577
+  Banks:
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10433
+--- !u!114 &-1488213039947123923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Death/lava_death
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Death/lava_death
+  Guid:
+    Data1: -1926984151
+    Data2: 1145076616
+    Data3: 775882396
+    Data4: 504144634
+  Banks:
+  - {fileID: 3469961291755295401}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8298
+--- !u!114 &-1305025429564367239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -962,7 +1858,7 @@ MonoBehaviour:
     Data3: -1965070425
     Data4: 1243070014
   Banks:
-  - {fileID: 7553782563299632004}
+  - {fileID: 3469961291755295401}
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -970,6 +1866,161 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+  Length: 5851
+--- !u!114 &-1269562885020185528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/white_room_soundtrack
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/white_room_soundtrack
+  Guid:
+    Data1: -1528316282
+    Data2: 1275835025
+    Data3: 2105237666
+    Data4: -847807229
+  Banks:
+  - {fileID: 2636201510600206113}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-838434994078201593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/env_spikes
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/env_spikes
+  Guid:
+    Data1: 102629123
+    Data2: 1236309194
+    Data3: -127297604
+    Data4: 705773398
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 864
+--- !u!114 &-708655754429876032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Environment/env_monitor_on
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Environment/env_monitor_on
+  Guid:
+    Data1: 371062372
+    Data2: 1099247259
+    Data3: -669894754
+    Data4: 1183849084
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1410
+>>>>>>> Stashed changes
+--- !u!114 &-640988751806318771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
+  lastModified: 638420621341794895
+  FileSizes:
+  - Name: Desktop
+    Value: 5048
+  Exists: 1
+--- !u!114 &-600976397687980955
+=======
+  lastModified: 638420442379038597
+  FileSizes:
+  - Name: Desktop
+    Value: 4780
+  Exists: 1
+--- !u!114 &-467804283643290724
+>>>>>>> Stashed changes
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
+  m_Name: event:/VoiceLines/StartBar/the_door_opens
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/StartBar/the_door_opens
+  Guid:
+    Data1: -1714656672
+    Data2: 1106610764
+    Data3: -1965070425
+    Data4: 1243070014
+  Banks:
+  - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/VoiceLines/Lava/hoop_hoop
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Lava/hoop_hoop
+  Guid:
+    Data1: -46544249
+    Data2: 1207883143
+    Data3: 557561753
+    Data4: -549396180
+  Banks:
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 5851
 --- !u!114 &-216643242265482505
 MonoBehaviour:
@@ -1083,6 +2134,9 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 39627
+=======
+  Length: 6896
+>>>>>>> Stashed changes
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,6 +2154,7 @@ MonoBehaviour:
   - {fileID: 2636201510600206113}
   - {fileID: 6747982855619543671}
   - {fileID: 8881565234032998584}
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
   EditorEvents:
   - {fileID: -8854033617894165395}
@@ -1179,11 +2234,91 @@ MonoBehaviour:
   - {fileID: 8763074106671439058}
   - {fileID: -5542268479629746388}
   - {fileID: -1249730381384853596}
+=======
+  - {fileID: 3469961291755295401}
+  EditorEvents:
+  - {fileID: 2574738550436814141}
+  - {fileID: -1269562885020185528}
+  - {fileID: 570554888462042351}
+  - {fileID: -838434994078201593}
+  - {fileID: -8946728012687149249}
+  - {fileID: -4116220385802133781}
+  - {fileID: -4017163995463009005}
+  - {fileID: -4748010137897604435}
+  - {fileID: 5619302219623549071}
+  - {fileID: -8376986269881330444}
+  - {fileID: -1488213039947123923}
+  - {fileID: -7330021413515211594}
+  - {fileID: -8714738844932915171}
+  - {fileID: 670965871557169923}
+  - {fileID: -2152651623291878612}
+  - {fileID: -7032996460786000042}
+  - {fileID: 680503810585722039}
+  - {fileID: 7670703503222262576}
+  - {fileID: 5131735025820781936}
+  - {fileID: 6888456461961586036}
+  - {fileID: 2741071537623142679}
+  - {fileID: 3617649215087630465}
+  - {fileID: 3752754500006700687}
+  - {fileID: 995185177332259235}
+  - {fileID: -8076238560072751458}
+  - {fileID: -6441744950569068520}
+  - {fileID: -4278227394929683075}
+  - {fileID: -2914242216855964800}
+  - {fileID: -2681199839351663228}
+  - {fileID: -1305025429564367239}
+  - {fileID: -708655754429876032}
+  - {fileID: 3553549235988292069}
+  - {fileID: -1569231255141142191}
+  - {fileID: -3659731143066593731}
+  - {fileID: 1575982812538536981}
+  - {fileID: -2733979208041447664}
+  - {fileID: 5536381297637371748}
+  - {fileID: -5422619600764070919}
+  - {fileID: 775725234108875680}
+  - {fileID: -467804283643290724}
+  - {fileID: 336551514545049039}
+  - {fileID: 7371485691231674703}
+  - {fileID: 4455918035077500817}
+  - {fileID: 431723987785572047}
+  - {fileID: -7570672629444380702}
+  - {fileID: 98968687704753148}
+  - {fileID: -3715469523001856553}
+  - {fileID: 5684525104019252737}
+  - {fileID: -2455022749389625430}
+  - {fileID: -3693159668322688687}
+  - {fileID: 4434916036168021182}
+  - {fileID: -5539030731476880373}
+  - {fileID: 7243642559291639225}
+  - {fileID: -9045894587782585774}
+  - {fileID: -3495941258805148651}
+  - {fileID: 2385400460115533018}
+  - {fileID: 913736850763856850}
+  - {fileID: 245573525477479553}
+  - {fileID: 2349868974597808201}
+  - {fileID: 2618066923009416933}
+  - {fileID: -9126947580749537318}
+  - {fileID: 166606836441513839}
+  - {fileID: 6007340354919926485}
+  - {fileID: -5968891515174226917}
+  - {fileID: -1930257717376253579}
+  - {fileID: 963257545870500745}
+  - {fileID: -4955717673447003314}
+  - {fileID: -1658882990685895443}
+  - {fileID: -2740788545584009690}
+  - {fileID: 2526837197008777997}
+  - {fileID: -2197236827253903961}
+  - {fileID: -1536280830631738401}
+  - {fileID: -6349366345616030157}
+  - {fileID: -4412965754232803092}
+  - {fileID: 2816160610973339852}
+>>>>>>> Stashed changes
   EditorParameters: []
   MasterBanks:
   - {fileID: 6747982855619543671}
   StringsBanks:
   - {fileID: -640988751806318771}
+<<<<<<< Updated upstream
   cacheTime: 638420621342281374
   cacheVersion: 131616
 --- !u!114 &123577656487502292
@@ -1215,6 +2350,11 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 3552
 --- !u!114 &207719070681337461
+=======
+  cacheTime: 638420442379496799
+  cacheVersion: 131616
+--- !u!114 &98968687704753148
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1233,7 +2373,11 @@ MonoBehaviour:
     Data3: -1272382573
     Data4: 380538680
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
+=======
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1242,7 +2386,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2795
+<<<<<<< Updated upstream
 --- !u!114 &245171310787560735
+=======
+--- !u!114 &166606836441513839
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1252,6 +2400,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/StartLava/the_door_opens
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/StartLava/the_door_opens
@@ -1262,6 +2411,18 @@ MonoBehaviour:
     Data4: -1909578746
   Banks:
   - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/VoiceLines/WakeUp/you_wake_up
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/WakeUp/you_wake_up
+  Guid:
+    Data1: 579804371
+    Data2: 1315587720
+    Data3: -767962695
+    Data4: -766693500
+  Banks:
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1269,8 +2430,41 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 5929
 --- !u!114 &361821886088927859
+=======
+  Length: 1854
+--- !u!114 &245573525477479553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/actual_knock
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/actual_knock
+  Guid:
+    Data1: 963813817
+    Data2: 1212447094
+    Data3: -382443344
+    Data4: 1663414334
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8594
+--- !u!114 &336551514545049039
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1289,7 +2483,11 @@ MonoBehaviour:
     Data3: -820084577
     Data4: 1555822803
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
+=======
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1298,7 +2496,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3369
+<<<<<<< Updated upstream
 --- !u!114 &482358265157367446
+=======
+--- !u!114 &431723987785572047
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1308,9 +2510,127 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/shotgun/shotgun_shoot
   m_EditorClassIdentifier: 
   Path: event:/SFX/shotgun/shotgun_shoot
+=======
+  m_Name: event:/VoiceLines/NotLeaveRoom/in_a_silly_turn_of_events
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/NotLeaveRoom/in_a_silly_turn_of_events
+  Guid:
+    Data1: -398418799
+    Data2: 1194720992
+    Data3: 400514189
+    Data4: -1318556136
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13035
+--- !u!114 &570554888462042351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Bar/youve_given_a_shot
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Bar/youve_given_a_shot
+  Guid:
+    Data1: -973973501
+    Data2: 1143738785
+    Data3: 708779413
+    Data4: 836480514
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6791
+--- !u!114 &670965871557169923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/NotLeaveRoom/before_opening_the_door
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/NotLeaveRoom/before_opening_the_door
+  Guid:
+    Data1: -1099601099
+    Data2: 1223573662
+    Data3: -1247787862
+    Data4: 1860343238
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9586
+--- !u!114 &680503810585722039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/AI_1/this_ai_knows_its_stuff
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_1/this_ai_knows_its_stuff
+  Guid:
+    Data1: 820786499
+    Data2: 1144776067
+    Data3: 403060637
+    Data4: 450999419
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7000
+--- !u!114 &775725234108875680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Shotgun/shotgun_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Shotgun/shotgun_shoot
+>>>>>>> Stashed changes
   Guid:
     Data1: 202563203
     Data2: 1135044140
@@ -1326,7 +2646,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1284
+<<<<<<< Updated upstream
 --- !u!114 &785572484343548725
+=======
+--- !u!114 &913736850763856850
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1336,6 +2660,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/SFX/Environment/env_monitor_on
   m_EditorClassIdentifier: 
   Path: event:/SFX/Environment/env_monitor_on
@@ -1344,6 +2669,44 @@ MonoBehaviour:
     Data2: 1099247259
     Data3: -669894754
     Data4: 1183849084
+=======
+  m_Name: event:/VoiceLines/End/i_dont_understand
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/i_dont_understand
+  Guid:
+    Data1: -548002632
+    Data2: 1134418948
+    Data3: 669381053
+    Data4: -990964334
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2690
+--- !u!114 &963257545870500745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Shotgun/shotgun_equip
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Shotgun/shotgun_equip
+  Guid:
+    Data1: 1980784114
+    Data2: 1187243985
+    Data3: -1470849645
+    Data4: -1062647132
+>>>>>>> Stashed changes
   Banks:
   - {fileID: 6747982855619543671}
   - {fileID: 8881565234032998584}
@@ -1353,8 +2716,40 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 1410
 --- !u!114 &843018784995014603
+=======
+  Length: 828
+--- !u!114 &995185177332259235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Death/white_room_death
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Death/white_room_death
+  Guid:
+    Data1: 1676491086
+    Data2: 1112658747
+    Data3: -1463451463
+    Data4: 2065859258
+  Banks:
+  - {fileID: 3469961291755295401}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6175
+--- !u!114 &1575982812538536981
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1373,7 +2768,11 @@ MonoBehaviour:
     Data3: 1242737802
     Data4: -233181552
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
+=======
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1382,7 +2781,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4884
+<<<<<<< Updated upstream
 --- !u!114 &1089180307626567542
+=======
+--- !u!114 &2349868974597808201
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1392,6 +2795,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/End/fuck
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/End/fuck
@@ -1404,11 +2808,26 @@ MonoBehaviour:
   - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
   IsStream: 0
+=======
+  m_Name: event:/VoiceLines/Maze/jump_over_spike
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Maze/jump_over_spike
+  Guid:
+    Data1: 978860990
+    Data2: 1095885536
+    Data3: -1125708668
+    Data4: 403664038
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+>>>>>>> Stashed changes
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 3976
 --- !u!114 &1285632308455955727
 MonoBehaviour:
@@ -1579,6 +2998,10 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 4702
 --- !u!114 &2631340184546477285
+=======
+  Length: 12094
+--- !u!114 &2385400460115533018
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1597,7 +3020,11 @@ MonoBehaviour:
     Data3: 1877311139
     Data4: 322339651
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
+=======
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1606,6 +3033,93 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4858
+<<<<<<< Updated upstream
+=======
+--- !u!114 &2526837197008777997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/no_music_this_time
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/no_music_this_time
+  Guid:
+    Data1: 1084422654
+    Data2: 1158024489
+    Data3: -24895872
+    Data4: 1307262144
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4414
+--- !u!114 &2574738550436814141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambient/lava_pops
+  m_EditorClassIdentifier: 
+  Path: event:/Ambient/lava_pops
+  Guid:
+    Data1: -1890112378
+    Data2: 1243210593
+    Data3: -638888807
+    Data4: 1810441958
+  Banks:
+  - {fileID: 2636201510600206113}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 39627
+--- !u!114 &2618066923009416933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/its_working
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/its_working
+  Guid:
+    Data1: -1514820927
+    Data2: 1245209300
+    Data3: -1434407800
+    Data4: -1170076535
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1541
+>>>>>>> Stashed changes
 --- !u!114 &2636201510600206113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,12 +3135,21 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Ambient.bank
   Name: Ambient
   StudioPath: bank:/Ambient
+<<<<<<< Updated upstream
   lastModified: 638420537224626593
   FileSizes:
   - Name: Desktop
     Value: 2416288
   Exists: 1
 --- !u!114 &2982248743756001915
+=======
+  lastModified: 638420026574752006
+  FileSizes:
+  - Name: Desktop
+    Value: 463360
+  Exists: 1
+--- !u!114 &2741071537623142679
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1636,6 +3159,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/AI_1/this_ai_knows_its_stuff
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/AI_1/this_ai_knows_its_stuff
@@ -1646,6 +3170,18 @@ MonoBehaviour:
     Data4: 450999419
   Banks:
   - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/VoiceLines/End/hold_on
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/hold_on
+  Guid:
+    Data1: -638133433
+    Data2: 1110708286
+    Data3: 1885737115
+    Data4: 1286256371
+  Banks:
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1653,8 +3189,13 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 7000
 --- !u!114 &3123969447550403273
+=======
+  Length: 2560
+--- !u!114 &2816160610973339852
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1664,6 +3205,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/Death/bar_death
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/Death/bar_death
@@ -1674,6 +3216,17 @@ MonoBehaviour:
     Data4: -585092577
   Banks:
   - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/Death/spike_death
+  m_EditorClassIdentifier: 
+  Path: event:/Death/spike_death
+  Guid:
+    Data1: 382995837
+    Data2: 1330281525
+    Data3: -1618210638
+    Data4: -1017202797
+  Banks:
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1681,8 +3234,13 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 10433
 --- !u!114 &3373653343973864848
+=======
+  Length: 3552
+--- !u!114 &3469961291755295401
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1691,6 +3249,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/VoiceLines/AI_3/the_ai_does_not_seem_very_happy
   m_EditorClassIdentifier: 
@@ -1879,6 +3438,20 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 1564
 --- !u!114 &5266571700560544944
+=======
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Voice.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Voice.bank
+  Name: Voice
+  StudioPath: bank:/Voice
+  lastModified: 638420026578740224
+  FileSizes:
+  - Name: Desktop
+    Value: 3882752
+  Exists: 1
+--- !u!114 &3553549235988292069
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1897,7 +3470,11 @@ MonoBehaviour:
     Data3: 1295632548
     Data4: 1307327207
   Banks:
+<<<<<<< Updated upstream
   - {fileID: 7553782563299632004}
+=======
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 1
   Is3D: 0
@@ -1906,7 +3483,11 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10370
+<<<<<<< Updated upstream
 --- !u!114 &5579667924671705226
+=======
+--- !u!114 &3617649215087630465
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1916,6 +3497,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/Death/spike_death
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/Death/spike_death
@@ -1928,13 +3510,32 @@ MonoBehaviour:
   - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
   IsStream: 0
+=======
+  m_Name: event:/VoiceLines/Maze/you_can_see_a_door
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Maze/you_can_see_a_door
+  Guid:
+    Data1: 1251097672
+    Data2: 1287343177
+    Data3: -2127284857
+    Data4: -911122423
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+>>>>>>> Stashed changes
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 3552
 --- !u!114 &5614492481563744091
+=======
+  Length: 10605
+--- !u!114 &3752754500006700687
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1944,6 +3545,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/VoiceLines/Bar/the_once_white_room
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/Bar/the_once_white_room
@@ -1954,6 +3556,18 @@ MonoBehaviour:
     Data4: 565072752
   Banks:
   - {fileID: 7553782563299632004}
+=======
+  m_Name: event:/VoiceLines/End/i_am_the_one_who_didnt_laugh
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/i_am_the_one_who_didnt_laugh
+  Guid:
+    Data1: 1673200717
+    Data2: 1080392315
+    Data3: 274855075
+    Data4: 1745921085
+  Banks:
+  - {fileID: 3469961291755295401}
+>>>>>>> Stashed changes
   - {fileID: 6747982855619543671}
   IsStream: 0
   Is3D: 0
@@ -1961,7 +3575,206 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 9743
+=======
+  Length: 5381
+--- !u!114 &4434916036168021182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/Maze/avoid_spike
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/Maze/avoid_spike
+  Guid:
+    Data1: 261095842
+    Data2: 1274039748
+    Data3: -1935644008
+    Data4: -142310691
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5851
+--- !u!114 &4455918035077500817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb Area
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb Area
+  Guid:
+    Data1: -1392805746
+    Data2: 1132151556
+    Data3: 279956386
+    Data4: -7568418
+  Banks:
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5131735025820781936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/JukeboxRoom/two_objects
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/JukeboxRoom/two_objects
+  Guid:
+    Data1: -1307861179
+    Data2: 1205898292
+    Data3: 252559508
+    Data4: 166479103
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7262
+--- !u!114 &5536381297637371748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/i_never_get_any_credit
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/i_never_get_any_credit
+  Guid:
+    Data1: -601775490
+    Data2: 1319411553
+    Data3: 395622829
+    Data4: 1943681820
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10187
+--- !u!114 &5619302219623549071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player/player_jump
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player/player_jump
+  Guid:
+    Data1: -381396710
+    Data2: 1226770865
+    Data3: -1212718188
+    Data4: -634688155
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
+--- !u!114 &5684525104019252737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/fuck
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/fuck
+  Guid:
+    Data1: 727138199
+    Data2: 1076087385
+    Data3: -184072806
+    Data4: -247091752
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1306
+--- !u!114 &6007340354919926485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/thats_the_door_opening
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/thats_the_door_opening
+  Guid:
+    Data1: -241807911
+    Data2: 1136528658
+    Data3: 1418479033
+    Data4: 1498181307
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2377
+>>>>>>> Stashed changes
 --- !u!114 &6747982855619543671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1977,12 +3790,21 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638420621341764997
   FileSizes:
   - Name: Desktop
     Value: 6883488
   Exists: 1
 --- !u!114 &6754669109467004922
+=======
+  lastModified: 638420442379008722
+  FileSizes:
+  - Name: Desktop
+    Value: 4588256
+  Exists: 1
+--- !u!114 &6888456461961586036
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1992,6 +3814,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
   m_Name: event:/Ambient/white_room_gramophone
   m_EditorClassIdentifier: 
   Path: event:/Ambient/white_room_gramophone
@@ -2024,10 +3847,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VoiceLines/LeaveRoom/traverse_the_corridor
   Guid:
+=======
+  m_Name: event:/VoiceLines/LeaveRoom/traverse_the_corridor
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/LeaveRoom/traverse_the_corridor
+  Guid:
+>>>>>>> Stashed changes
     Data1: 1433715269
     Data2: 1338558675
     Data3: 1591968915
     Data4: 1089165325
+<<<<<<< Updated upstream
   Banks:
   - {fileID: 7553782563299632004}
   - {fileID: 6747982855619543671}
@@ -2300,16 +4130,106 @@ MonoBehaviour:
     Data2: 1187243985
     Data3: -1470849645
     Data4: -1062647132
+=======
+>>>>>>> Stashed changes
   Banks:
+  - {fileID: 3469961291755295401}
   - {fileID: 6747982855619543671}
-  - {fileID: 8881565234032998584}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+<<<<<<< Updated upstream
   Length: 828
+=======
+  Length: 9064
+--- !u!114 &7243642559291639225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/AI_3/the_ai_does_not_seem_very_happy
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_3/the_ai_does_not_seem_very_happy
+  Guid:
+    Data1: 781649828
+    Data2: 1207365176
+    Data3: 2081139882
+    Data4: 2090071760
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9508
+--- !u!114 &7371485691231674703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/AI_2/was_that_the_punchline
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/AI_2/was_that_the_punchline
+  Guid:
+    Data1: 413642893
+    Data2: 1277280325
+    Data3: 1997341825
+    Data4: -861473731
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4832
+--- !u!114 &7670703503222262576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VoiceLines/End/you_come_up_with_a_plan
+  m_EditorClassIdentifier: 
+  Path: event:/VoiceLines/End/you_come_up_with_a_plan
+  Guid:
+    Data1: 1353187909
+    Data2: 1187962204
+    Data3: 1374695335
+    Data4: -58819093
+  Banks:
+  - {fileID: 3469961291755295401}
+  - {fileID: 6747982855619543671}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10657
+>>>>>>> Stashed changes
 --- !u!114 &8881565234032998584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2325,10 +4245,17 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
+<<<<<<< Updated upstream
   lastModified: 638420621342281374
   FileSizes:
   - Name: Desktop
     Value: 625216
+=======
+  lastModified: 638420442379496799
+  FileSizes:
+  - Name: Desktop
+    Value: 283872
+>>>>>>> Stashed changes
   Exists: 1
 --- !u!114 &9074305147904866416
 MonoBehaviour:

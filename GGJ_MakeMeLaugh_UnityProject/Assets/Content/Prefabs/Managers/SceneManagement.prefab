@@ -480,6 +480,66 @@ MonoBehaviour:
           m_StringArgument: JukeboxRoom
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &3472535047182692416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072409536006661188}
+  - component: {fileID: 1849093352314410718}
+  m_Layer: 0
+  m_Name: LoadLastStage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2072409536006661188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472535047182692416}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6273699837922470243}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849093352314410718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472535047182692416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 3650441e427914447aaf84e77a9b1372, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3997142022180309013}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LastStage
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4652628124879096252
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,11 +824,17 @@ Transform:
   - {fileID: 6915709016292940115}
   - {fileID: 1873671819899464272}
   - {fileID: 7558114060852849329}
+<<<<<<< Updated upstream
   - {fileID: 4756981258245349230}
   - {fileID: 5127441099303170606}
   - {fileID: 5028960163211273254}
   - {fileID: 572526667936864451}
   - {fileID: 5592591489891821932}
+=======
+  - {fileID: 3176970657194689656}
+  - {fileID: 5028960163211273254}
+  - {fileID: 2072409536006661188}
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3997142022180309013
@@ -783,7 +849,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11300bbe99877743a3e9105284c6af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 --- !u!1 &6404612922258472437
+=======
+--- !u!1 &7137210526791182711
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -791,22 +861,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 572526667936864451}
   - component: {fileID: 5542682053044431752}
   m_Layer: 0
   m_Name: UnloadNarratorRoom
+=======
+  - component: {fileID: 3176970657194689656}
+  - component: {fileID: 8923980630548749703}
+  m_Layer: 0
+  m_Name: UnloadThirdMonitorRoom
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!4 &572526667936864451
+=======
+--- !u!4 &3176970657194689656
+>>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 6404612922258472437}
+=======
+  m_GameObject: {fileID: 7137210526791182711}
+>>>>>>> Stashed changes
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -815,19 +900,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6273699837922470243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &5542682053044431752
+=======
+--- !u!114 &8923980630548749703
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 6404612922258472437}
+=======
+  m_GameObject: {fileID: 7137210526791182711}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   gameEvent: {fileID: 11400000, guid: 664bf12ef7d239e4cb1d25cdd18be356, type: 2}
+=======
+  gameEvent: {fileID: 11400000, guid: 2bf8b59286b0a53408877c57754012c9, type: 2}
+>>>>>>> Stashed changes
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -840,7 +937,11 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+<<<<<<< Updated upstream
           m_StringArgument: NarratorRoom
+=======
+          m_StringArgument: ThirdMonitorRoom
+>>>>>>> Stashed changes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7210770843586655460

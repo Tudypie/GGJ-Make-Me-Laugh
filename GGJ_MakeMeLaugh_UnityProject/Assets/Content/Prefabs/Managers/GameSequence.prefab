@@ -120,7 +120,11 @@ MonoBehaviour:
           m_StringArgument: Maze
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< Updated upstream
 --- !u!1 &3133168072440136029
+=======
+--- !u!1 &1703817667940515048
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,8 +132,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 1634014071313869530}
   - component: {fileID: 310923073725189661}
+=======
+  - component: {fileID: 1532028395430678601}
+  - component: {fileID: 6451368593548127722}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: GameEnd
   m_TagString: Untagged
@@ -137,13 +146,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!4 &1634014071313869530
+=======
+--- !u!4 &1532028395430678601
+>>>>>>> Stashed changes
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 3133168072440136029}
+=======
+  m_GameObject: {fileID: 1703817667940515048}
+>>>>>>> Stashed changes
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -152,23 +169,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8402065760484159302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &310923073725189661
+=======
+--- !u!114 &6451368593548127722
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 3133168072440136029}
+=======
+  m_GameObject: {fileID: 1703817667940515048}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   gameEvent: {fileID: 11400000, guid: 881ce7074b96ccd47b76ed7e2cce8328, type: 2}
+=======
+  gameEvent: {fileID: 11400000, guid: ef9e1fa2387386f47a1988ca0a113c3e, type: 2}
+>>>>>>> Stashed changes
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
+<<<<<<< Updated upstream
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
         m_MethodName: RestartScene
         m_Mode: 1
@@ -181,6 +211,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+=======
+>>>>>>> Stashed changes
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -189,6 +221,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
+<<<<<<< Updated upstream
           m_StringArgument: Enter maze
           m_BoolArgument: 1
         m_CallState: 2
@@ -244,12 +277,25 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+=======
+          m_StringArgument: Leave room
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+>>>>>>> Stashed changes
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
+<<<<<<< Updated upstream
           m_StringArgument: Enter maze
+=======
+          m_StringArgument: Leave room
+>>>>>>> Stashed changes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3640589122585553613
@@ -526,6 +572,7 @@ Transform:
   - {fileID: 4932270087191108549}
   - {fileID: 8331429338133284024}
   - {fileID: 2090401647402407857}
+  - {fileID: 1532028395430678601}
   - {fileID: 6371173082886362906}
   - {fileID: 4956965868853104352}
   - {fileID: 6218505209033505793}
@@ -640,9 +687,13 @@ MonoBehaviour:
       duration: 2.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 579804371
@@ -660,9 +711,13 @@ MonoBehaviour:
       duration: 6
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1108485526
@@ -680,9 +735,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1906396237
@@ -715,9 +774,13 @@ MonoBehaviour:
       duration: 10
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1099601099
@@ -736,9 +799,13 @@ MonoBehaviour:
       duration: 14
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -398418799
@@ -757,9 +824,13 @@ MonoBehaviour:
       duration: 15
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 679703548
@@ -792,9 +863,13 @@ MonoBehaviour:
       duration: 7
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1873954058
@@ -812,9 +887,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -890680784
@@ -837,9 +916,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -856,9 +939,13 @@ MonoBehaviour:
       duration: 3.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -236678260
@@ -880,9 +967,13 @@ MonoBehaviour:
       duration: 4
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -899,9 +990,13 @@ MonoBehaviour:
       duration: 2
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -785598882
@@ -919,9 +1014,13 @@ MonoBehaviour:
       duration: 11
       autoNext: 1
       isJoke: 1
+<<<<<<< Updated upstream
       laughDelay: 7
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -938,9 +1037,13 @@ MonoBehaviour:
       duration: 2
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1112195815
@@ -964,9 +1067,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -986,9 +1093,13 @@ MonoBehaviour:
       duration: 7
       autoNext: 1
       isJoke: 1
+<<<<<<< Updated upstream
       laughDelay: 4
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1006,9 +1117,13 @@ MonoBehaviour:
       duration: 7
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 820786499
@@ -1032,9 +1147,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1051,9 +1170,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1070,9 +1193,13 @@ MonoBehaviour:
       duration: 6
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 2094239220
@@ -1097,9 +1224,13 @@ MonoBehaviour:
       duration: 7
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 1
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1119,9 +1250,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 1
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -571496044
@@ -1187,9 +1322,13 @@ MonoBehaviour:
       duration: 6.8
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1381197586
@@ -1211,9 +1350,13 @@ MonoBehaviour:
       duration: 10
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -2028037019
@@ -1233,9 +1376,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1330421512
@@ -1257,9 +1404,13 @@ MonoBehaviour:
       duration: 11.5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 816451991
@@ -1277,9 +1428,13 @@ MonoBehaviour:
       duration: 6
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 261095842
@@ -1298,9 +1453,13 @@ MonoBehaviour:
       duration: 12.5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 978860990
@@ -1320,9 +1479,13 @@ MonoBehaviour:
       duration: 11
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1251097672
@@ -1346,9 +1509,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1502810250
@@ -1398,6 +1565,7 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 0
       text: Two objects seem to have appeared in the before empty room. A white table
+<<<<<<< Updated upstream
         and... what appears to be a gramophone.
       duration: 28
       autoNext: 1
@@ -1405,6 +1573,13 @@ MonoBehaviour:
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+        and... what appears to be a Jukebox/Music Box
+      duration: 7.5
+      autoNext: 1
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1307861179
@@ -1434,9 +1609,13 @@ MonoBehaviour:
       duration: 6.8
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1895894614
@@ -1468,9 +1647,13 @@ MonoBehaviour:
       duration: 8
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1212650830
@@ -1496,9 +1679,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1515,9 +1702,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 1
+<<<<<<< Updated upstream
       laughDelay: 1
       shutDownMonitor: 0
       playAISound: 1
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -2059481270
@@ -1541,9 +1732,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1556,6 +1751,7 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
+<<<<<<< Updated upstream
       text: 'A cowboy walks into a bar. He pulls out his revolver and says "Hey barman,
         give me a shot".
 
@@ -1567,6 +1763,17 @@ MonoBehaviour:
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      text: 'A gunslinger walks into a bar. He pulls out a revolver and says "Hey
+        barman, give me a shot".
+
+        The barman pulls a shotgun from under the
+        counter and says "Is this what you''re looking for?"'
+      duration: 8
+      autoNext: 1
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1586,9 +1793,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 413642893
@@ -1613,9 +1824,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 1
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1636,9 +1851,13 @@ MonoBehaviour:
       duration: 6
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 1
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1714656672
@@ -1694,9 +1913,13 @@ MonoBehaviour:
       duration: 4.8
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 735290278
@@ -1719,16 +1942,24 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+<<<<<<< Updated upstream
       triggerDelay: 4.5
+=======
+      triggerDelay: 2.4
+>>>>>>> Stashed changes
     - author: 0
       text: You've given him a shot alright! The gunslinger has been outslinged...
         or something like that.
       duration: 6.8
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -973973501
@@ -1745,12 +1976,19 @@ MonoBehaviour:
 
         On
         the other side of the bar, you notice a Jukebox. Soon enough, it starts playing. '
+<<<<<<< Updated upstream
       duration: 30
       autoNext: 1
       isJoke: 0
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      duration: 14
+      autoNext: 1
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 2026133484
@@ -1780,9 +2018,13 @@ MonoBehaviour:
       duration: 7.5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1549079188
@@ -1845,9 +2087,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1864,9 +2110,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1883,9 +2133,13 @@ MonoBehaviour:
       duration: 4
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 872340899
@@ -1905,9 +2159,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -1938,9 +2196,13 @@ MonoBehaviour:
       duration: 9.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 781649828
@@ -1961,9 +2223,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -683119961
@@ -2037,9 +2303,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -46544249
@@ -2056,9 +2326,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1973938791
@@ -2079,9 +2353,13 @@ MonoBehaviour:
       duration: 6.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1738384846
@@ -2098,9 +2376,13 @@ MonoBehaviour:
       duration: 4.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1084422654
@@ -2119,9 +2401,13 @@ MonoBehaviour:
       duration: 11
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1353187909
@@ -2139,9 +2425,13 @@ MonoBehaviour:
       duration: 6.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1821962959
@@ -2159,9 +2449,13 @@ MonoBehaviour:
       duration: 10.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -601775490
@@ -2178,9 +2472,13 @@ MonoBehaviour:
       duration: 2.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -241807911
@@ -2245,9 +2543,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1572146977
@@ -2267,9 +2569,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2288,10 +2594,15 @@ MonoBehaviour:
         Just BEAKause!'
       duration: 8
       autoNext: 1
+<<<<<<< Updated upstream
       isJoke: 1
       laughDelay: 4
       shutDownMonitor: 0
       playAISound: 0
+=======
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2310,10 +2621,15 @@ MonoBehaviour:
         An Impasta!'
       duration: 5
       autoNext: 1
+<<<<<<< Updated upstream
       isJoke: 1
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1545891787
@@ -2330,9 +2646,13 @@ MonoBehaviour:
       duration: 2
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1514820927
@@ -2356,9 +2676,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2375,9 +2699,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -638133433
@@ -2395,9 +2723,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -638133433
@@ -2414,9 +2746,13 @@ MonoBehaviour:
       duration: 2
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -638133433
@@ -2434,9 +2770,13 @@ MonoBehaviour:
       duration: 8.5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 963813817
@@ -2462,10 +2802,15 @@ MonoBehaviour:
         death'
       duration: 10
       autoNext: 1
+<<<<<<< Updated upstream
       isJoke: 1
       laughDelay: 6
       shutDownMonitor: 0
       playAISound: 0
+=======
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2482,9 +2827,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -1929054337
@@ -2501,9 +2850,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 963813817
@@ -2520,9 +2873,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1033703323
@@ -2539,9 +2896,13 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: -548002632
@@ -2558,9 +2919,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 1673200717
@@ -2580,9 +2945,13 @@ MonoBehaviour:
       duration: 4
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 727138199
@@ -2602,9 +2971,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 1
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2660,12 +3033,19 @@ MonoBehaviour:
 
 
         We''ve reached the last stage of this research.'
+<<<<<<< Updated upstream
       duration: 5
       autoNext: 1
       isJoke: 0
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      duration: 4
+      autoNext: 1
+      isJoke: 0
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2685,9 +3065,13 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2698,7 +3082,11 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls:
+<<<<<<< Updated upstream
           - m_Target: {fileID: 11400000, guid: d79077848d7dd8b4ab938bee42a5f8ab, type: 2}
+=======
+          - m_Target: {fileID: 11400000, guid: e700011aaa03798459bc994b93ef51e4, type: 2}
+>>>>>>> Stashed changes
             m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
             m_MethodName: Invoke
             m_Mode: 1
@@ -2710,18 +3098,26 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+<<<<<<< Updated upstream
       triggerDelay: 2
+=======
+      triggerDelay: 0
+>>>>>>> Stashed changes
     - author: 1
       text: 'Input Noted
 
 
         Thank you for aiding in this research'
-      duration: 5
+      duration: 4
       autoNext: 1
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2735,12 +3131,16 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 1
       text: YOU DID NOT MAKE ME LAUGH
-      duration: 5
+      duration: 10
       autoNext: 0
       isJoke: 0
+<<<<<<< Updated upstream
       laughDelay: 0
       shutDownMonitor: 0
       playAISound: 0
+=======
+      shutDownMonitor: 0
+>>>>>>> Stashed changes
       audioEvent:
         Guid:
           Data1: 0
@@ -2751,7 +3151,11 @@ MonoBehaviour:
       eventToTrigger:
         m_PersistentCalls:
           m_Calls:
+<<<<<<< Updated upstream
           - m_Target: {fileID: 11400000, guid: 881ce7074b96ccd47b76ed7e2cce8328, type: 2}
+=======
+          - m_Target: {fileID: 11400000, guid: ef9e1fa2387386f47a1988ca0a113c3e, type: 2}
+>>>>>>> Stashed changes
             m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
             m_MethodName: Invoke
             m_Mode: 1

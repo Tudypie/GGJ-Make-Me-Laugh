@@ -51,7 +51,7 @@ namespace GameJam.Player
 
 			if (!IsGrounded) velocity.y += Time.deltaTime * velocityMultiplier;
 
-            //if (!IsGrounded && (playerManager.PlayerControler.collisionFlags & CollisionFlags.Above) != 0) velocity.y = -velocity.y; // Fix for player sticking on ceilings for a short time when jumping
+            if (!IsGrounded && (playerManager.PlayerControler.collisionFlags & CollisionFlags.Above) != 0) velocity.y = -velocity.y; // Fix for player sticking on ceilings for a short time when jumping
 
             Move();
 		}

@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannotInteractMessage: 
-  interactMessage: Use
+  interactMessage: to turn on
   canInteract: 1
   multipleInteractions: 0
   useScriptableObjectEvent: 0

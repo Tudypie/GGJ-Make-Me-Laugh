@@ -17,11 +17,12 @@ public class PlayerShotgun : MonoBehaviour
     private void Start()
     {
         inputManager = InputManager.INPUT;
-        playerCamera = PlayerManager.Instance.PlayerCamera;
     }
     private void Update()
     {
         if(!hasShotgun) { return; }
+        
+        playerCamera = PlayerManager.Instance.PlayerCamera;
 
         if(inputManager.Player.Shoot.IsPressed())
         {

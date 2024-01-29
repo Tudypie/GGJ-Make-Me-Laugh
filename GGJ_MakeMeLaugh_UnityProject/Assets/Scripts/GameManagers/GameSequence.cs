@@ -160,7 +160,7 @@ public class GameSequence : MonoBehaviour
         yield return new WaitForSeconds(deaths[deathIndex].duration);
         blackScreen.SetActive(false);
         subtitlesText.text = "";
-        if(currentMessageNum == 0) StartCoroutine(Sequence());
+        if(currentSequenceNum == 0) StartCoroutine(Sequence());
     }
 
     IEnumerator ShowMonitorText(string fullText)
@@ -207,6 +207,7 @@ public class GameSequence : MonoBehaviour
                     {
                         Invoke(nameof(PlayLaugh), sequences[currentSequenceNum].messages[currentMessageNum].laughDelay);
                     }
+<<<<<<< Updated upstream
                     if (sequences[currentSequenceNum].messages[currentMessageNum].shutDownMonitor)
                     {
                         Invoke(nameof(ShutDownMonitor), sequences[currentSequenceNum].messages[currentMessageNum].duration);
@@ -217,6 +218,8 @@ public class GameSequence : MonoBehaviour
                         audioPlayer.EventReference = sequences[currentSequenceNum].messages[currentMessageNum].audioEvent;
                         audioPlayer.Play();
                     }
+=======
+>>>>>>> Stashed changes
                 } 
                 else
                 {
@@ -228,6 +231,11 @@ public class GameSequence : MonoBehaviour
                 }
 
                 Invoke(nameof(TriggerMessageEvent), sequences[currentSequenceNum].messages[currentMessageNum].triggerDelay);
+
+                if (sequences[currentSequenceNum].messages[currentMessageNum].shutDownMonitor)
+                {
+                    Invoke(nameof(ShutDownMonitor), sequences[currentSequenceNum].messages[currentMessageNum].duration);
+                }
 
                 if (sequences[currentSequenceNum].messages[currentMessageNum].autoNext)
                 {

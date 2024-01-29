@@ -10,6 +10,7 @@ namespace GameJam.Audio
     {
         public static FMODEvents Instance { get; private set; }
 
+        public EventReference endGameDeath;
 
         [Header("Player")]
         public EventReference playerFootsteps;

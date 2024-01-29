@@ -1,3 +1,4 @@
+using GameJam.Audio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,5 +38,19 @@ public class SceneManagement : MonoBehaviour
     public void UnloadScene(string sceneName)
     {
         SceneManager.UnloadSceneAsync(sceneName);
+    }
+
+    public void RestartGame()
+    {
+        StartCoroutine(Restart());
+    }
+
+    IEnumerator Restart()
+    {
+        AudioManager.Instance.PlayAudio(FMODEvents.Instance.endGameDeath);
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene("Game");
+        SceneManager.LoadSceneAsync("WhiteRoom", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("FirstMonitorRoom", LoadSceneMode.Additive);
     }
 }

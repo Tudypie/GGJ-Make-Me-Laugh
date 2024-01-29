@@ -678,8 +678,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPlayerSpeed: 3
+<<<<<<< Updated upstream
   jumpHeight: 1
   velocityMultiplier: 20
+=======
+  jumpHeight: 1.5
+  velocityMultiplier: 15
+>>>>>>> Stashed changes
   groundCheckTransform: {fileID: 877209971}
   groundCheckMask:
     serializedVersion: 2
@@ -713,7 +718,7 @@ MonoBehaviour:
   deafultTimeBetwenFootsteps: 0.5
   groundTypeMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 256
 --- !u!114 &8466724475964905315
 MonoBehaviour:
   m_ObjectHideFlags: 0
