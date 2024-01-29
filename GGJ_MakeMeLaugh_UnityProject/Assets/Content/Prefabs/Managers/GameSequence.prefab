@@ -120,6 +120,138 @@ MonoBehaviour:
           m_StringArgument: Maze
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &3133168072440136029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634014071313869530}
+  - component: {fileID: 310923073725189661}
+  m_Layer: 0
+  m_Name: GameEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1634014071313869530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3133168072440136029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8402065760484159302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &310923073725189661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3133168072440136029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 881ce7074b96ccd47b76ed7e2cce8328, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
+        m_MethodName: RestartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: Enter maze
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: Enter maze
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!1 &3225518532586669024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699052297520010222}
+  - component: {fileID: 6317605461652432423}
+  m_Layer: 0
+  m_Name: DisableMovement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699052297520010222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225518532586669024}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8402065760484159302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6317605461652432423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225518532586669024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: ad09ad7f9483d1c468625b496dca96ff, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: Enter maze
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3640589122585553613
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +530,9 @@ Transform:
   - {fileID: 4956965868853104352}
   - {fileID: 6218505209033505793}
   - {fileID: 6297697227307758823}
+  - {fileID: 1634014071313869530}
+  - {fileID: 699052297520010222}
+  - {fileID: 8370632315987613761}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6473586781659822831
@@ -447,6 +582,7 @@ MonoBehaviour:
   currentMessageNum: 0
   subtitlesText: {fileID: 0}
   blackScreen: {fileID: 0}
+  monitorText: {fileID: 0}
   typewritterEffectDelay: 0.04
   deaths:
   - message: Hopefully the next subject will express their free will in a way that
@@ -504,7 +640,9 @@ MonoBehaviour:
       duration: 2.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 579804371
@@ -522,7 +660,9 @@ MonoBehaviour:
       duration: 6
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1108485526
@@ -540,7 +680,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1906396237
@@ -573,7 +715,9 @@ MonoBehaviour:
       duration: 10
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1099601099
@@ -592,7 +736,9 @@ MonoBehaviour:
       duration: 14
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -398418799
@@ -611,7 +757,9 @@ MonoBehaviour:
       duration: 15
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 679703548
@@ -644,7 +792,9 @@ MonoBehaviour:
       duration: 7
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1873954058
@@ -662,7 +812,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -890680784
@@ -685,7 +837,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -702,7 +856,9 @@ MonoBehaviour:
       duration: 3.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -236678260
@@ -724,7 +880,9 @@ MonoBehaviour:
       duration: 4
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -741,7 +899,9 @@ MonoBehaviour:
       duration: 2
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -785598882
@@ -754,14 +914,14 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
-      text: 'I will proceed with the first joke.
-
-
-        [Joke]'
-      duration: 5
+      text: "I will proceed with the first joke.\n\nA coder enters a 48 hour gamejam.\nThankfully,
+        he gets 8 hours of sleep.\_\n\nAfter the gamejam."
+      duration: 11
       autoNext: 1
       isJoke: 1
+      laughDelay: 7
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -778,7 +938,9 @@ MonoBehaviour:
       duration: 2
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1112195815
@@ -802,7 +964,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -815,11 +979,16 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
-      text: '[Input joke]'
-      duration: 5
+      text: 'Why is six afraid of seven? Because seven eight nine.
+
+        And because
+        seven is a six offender.'
+      duration: 7
       autoNext: 1
       isJoke: 1
+      laughDelay: 4
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -837,7 +1006,9 @@ MonoBehaviour:
       duration: 7
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 820786499
@@ -861,7 +1032,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -878,7 +1051,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -895,7 +1070,9 @@ MonoBehaviour:
       duration: 6
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 2094239220
@@ -920,7 +1097,9 @@ MonoBehaviour:
       duration: 7
       autoNext: 1
       isJoke: 0
-      shutDownMonitor: 0
+      laughDelay: 0
+      shutDownMonitor: 1
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -940,7 +1119,9 @@ MonoBehaviour:
       duration: 3
       autoNext: 1
       isJoke: 0
-      shutDownMonitor: 1
+      laughDelay: 0
+      shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -571496044
@@ -1006,7 +1187,9 @@ MonoBehaviour:
       duration: 6.8
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1381197586
@@ -1028,7 +1211,9 @@ MonoBehaviour:
       duration: 10
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -2028037019
@@ -1048,7 +1233,9 @@ MonoBehaviour:
       duration: 3
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1330421512
@@ -1070,7 +1257,9 @@ MonoBehaviour:
       duration: 11.5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 816451991
@@ -1088,7 +1277,9 @@ MonoBehaviour:
       duration: 6
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 261095842
@@ -1107,7 +1298,9 @@ MonoBehaviour:
       duration: 12.5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 978860990
@@ -1127,7 +1320,9 @@ MonoBehaviour:
       duration: 11
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1251097672
@@ -1151,7 +1346,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1502810250
@@ -1201,11 +1398,13 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 0
       text: Two objects seem to have appeared in the before empty room. A white table
-        and... what appears to be a Jukebox/Music Box
-      duration: 7.5
+        and... what appears to be a gramophone.
+      duration: 28
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1307861179
@@ -1230,41 +1429,14 @@ MonoBehaviour:
             m_CallState: 2
       triggerDelay: 3
     - author: 0
-      text: 
-      duration: 5
-      autoNext: 0
-      isJoke: 0
-      shutDownMonitor: 0
-      audioEvent:
-        Guid:
-          Data1: 0
-          Data2: 0
-          Data3: 0
-          Data4: 0
-        Path: 
-      eventToTrigger:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 11400000, guid: 3eefdd86f38f48f43a10fcd981230485, type: 2}
-            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-            m_MethodName: Invoke
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      triggerDelay: 25
-    - author: 0
       text: As the song ends, you can hear the door opening. Behind it, the old corridor
         appears to be back.
       duration: 6.8
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1895894614
@@ -1296,7 +1468,9 @@ MonoBehaviour:
       duration: 8
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1212650830
@@ -1322,7 +1496,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1335,18 +1511,20 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
-      text: '[Insert Good Joke]'
+      text: Ligma Balls
       duration: 5
       autoNext: 1
       isJoke: 1
+      laughDelay: 1
       shutDownMonitor: 0
+      playAISound: 1
       audioEvent:
         Guid:
-          Data1: 0
-          Data2: 0
-          Data3: 0
-          Data4: 0
-        Path: 
+          Data1: -2059481270
+          Data2: 1263173530
+          Data3: 927134645
+          Data4: 290634494
+        Path: event:/SFX/shocked
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
@@ -1363,7 +1541,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1376,15 +1556,17 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
-      text: 'An assassin walks into a bar. He pulls out his knives and says "Hey
-        barman, give me a shot".
+      text: 'A cowboy walks into a bar. He pulls out his revolver and says "Hey barman,
+        give me a shot".
 
-        The barman pulls a shotgun from under the
-        counter and says "Is this what you''re looking for?"'
+        The barman pulls a shotgun from under the counter
+        and says "Is this what you''re looking for?"'
       duration: 8
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1404,7 +1586,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 413642893
@@ -1429,7 +1613,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
-      shutDownMonitor: 0
+      laughDelay: 0
+      shutDownMonitor: 1
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1450,7 +1636,9 @@ MonoBehaviour:
       duration: 6
       autoNext: 0
       isJoke: 0
-      shutDownMonitor: 1
+      laughDelay: 0
+      shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1714656672
@@ -1506,7 +1694,9 @@ MonoBehaviour:
       duration: 4.8
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 735290278
@@ -1529,14 +1719,16 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-      triggerDelay: 2.4
+      triggerDelay: 4.5
     - author: 0
       text: You've given him a shot alright! The gunslinger has been outslinged...
         or something like that.
       duration: 6.8
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -973973501
@@ -1556,7 +1748,9 @@ MonoBehaviour:
       duration: 30
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 2026133484
@@ -1586,7 +1780,9 @@ MonoBehaviour:
       duration: 7.5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1549079188
@@ -1649,7 +1845,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1666,7 +1864,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1683,7 +1883,9 @@ MonoBehaviour:
       duration: 4
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 872340899
@@ -1703,7 +1905,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -1731,10 +1935,12 @@ MonoBehaviour:
       text: The AI does not seem very happy. In fact, you're starting to realize
         that, if this goes like the last two times, not laughing was not a very good
         idea.
-      duration: 5
+      duration: 9.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 781649828
@@ -1755,7 +1961,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -683119961
@@ -1829,7 +2037,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -46544249
@@ -1846,7 +2056,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1973938791
@@ -1864,10 +2076,12 @@ MonoBehaviour:
     - author: 0
       text: You feel relieved to have escaped the bothersome heat, and can now rest...
         in a completely white room.
-      duration: 5
+      duration: 6.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1738384846
@@ -1881,10 +2095,12 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 0
       text: 'No music this time it seems. Just... pristine floors and walls. '
-      duration: 5
+      duration: 4.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1084422654
@@ -1900,17 +2116,19 @@ MonoBehaviour:
       text: Now that you have a bit of time to yourself, you come up with a plan.
         You realize that if you laugh at every single joke, as terrible as it may
         be, you won't have to face the challenges!
-      duration: 5
+      duration: 11
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
-          Data1: 1572146977
-          Data2: 1216026096
-          Data3: -1492130373
-          Data4: 1376748022
-        Path: event:/VoiceLines/End/plan_into_action
+          Data1: 1353187909
+          Data2: 1187962204
+          Data3: 1374695335
+          Data4: -58819093
+        Path: event:/VoiceLines/End/you_come_up_with_a_plan
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
@@ -1918,10 +2136,12 @@ MonoBehaviour:
     - author: 0
       text: '"I am brilliant!" you think to yourself, totally not having got the
         idea from yours truly the Narrator. '
-      duration: 5
+      duration: 6.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1821962959
@@ -1936,10 +2156,12 @@ MonoBehaviour:
     - author: 0
       text: Sigh, I never get any credit. I wish I could be included in reality,
         but frankly, I am not allowed. Not that I'd like to be in your place.
-      duration: 5
+      duration: 10.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -601775490
@@ -1953,10 +2175,12 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 0
       text: Aha! That's the door opening!
-      duration: 5
+      duration: 2.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -241807911
@@ -2003,13 +2227,27 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 11400000, guid: c73765175e25b98479ac009a804bb69d, type: 2}
+            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
+            m_MethodName: Invoke
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       triggerDelay: 0
     - author: 0
       text: Time to put your plan into action.
-      duration: 5
+      duration: 3
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1572146977
@@ -2026,10 +2264,12 @@ MonoBehaviour:
 
 
         Please react accordingly to the joke prompts.'
-      duration: 5
+      duration: 3
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2042,11 +2282,16 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
-      text: '[bad joke]'
-      duration: 5
+      text: 'Why did the chicken cross the road?
+
+
+        Just BEAKause!'
+      duration: 8
       autoNext: 1
-      isJoke: 0
+      isJoke: 1
+      laughDelay: 4
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2059,28 +2304,35 @@ MonoBehaviour:
           m_Calls: []
       triggerDelay: 0
     - author: 1
-      text: '[bad joke]'
+      text: 'What do you call a fake noodle?
+
+
+        An Impasta!'
       duration: 5
       autoNext: 1
-      isJoke: 0
+      isJoke: 1
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
-          Data1: 0
-          Data2: 0
-          Data3: 0
-          Data4: 0
-        Path: 
+          Data1: -1545891787
+          Data2: 1297733093
+          Data3: 1040918967
+          Data4: -1808565984
+        Path: event:/SFX/sus
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
       triggerDelay: 0
     - author: 0
       text: It's working!
-      duration: 5
+      duration: 2
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1514820927
@@ -2104,7 +2356,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2118,10 +2372,12 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 0
       text: Hold on that's not...
-      duration: 5
+      duration: 3
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -638133433
@@ -2139,7 +2395,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -638133433
@@ -2153,10 +2411,12 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 1
       text: Knock knock
-      duration: 5
+      duration: 2
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -638133433
@@ -2171,10 +2431,12 @@ MonoBehaviour:
     - author: 0
       text: Darn! There's an actual knock on my door! Nobody has access to my door!
         I don't like this, not at all, no no no...
-      duration: 5
+      duration: 8.5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 963813817
@@ -2186,7 +2448,7 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
       triggerDelay: 0
-    - author: 0
+    - author: 1
       text: 'Who''s there
 
 
@@ -2198,27 +2460,31 @@ MonoBehaviour:
 
         Narrator''s
         death'
-      duration: 5
+      duration: 10
       autoNext: 1
-      isJoke: 0
+      isJoke: 1
+      laughDelay: 6
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
-          Data1: 963813817
-          Data2: 1212447094
-          Data3: -382443344
-          Data4: 1663414334
-        Path: event:/VoiceLines/End/actual_knock
+          Data1: 0
+          Data2: 0
+          Data3: 0
+          Data4: 0
+        Path: 
       eventToTrigger:
         m_PersistentCalls:
           m_Calls: []
       triggerDelay: 0
     - author: 0
       text: That is NOT funny!
-      duration: 5
+      duration: 3
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -1929054337
@@ -2232,10 +2498,12 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 1
       text: YOU DID NOT LAUGH
-      duration: 5
+      duration: 3
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 963813817
@@ -2252,7 +2520,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1033703323
@@ -2266,10 +2536,12 @@ MonoBehaviour:
       triggerDelay: 0
     - author: 0
       text: I-I don't understand!
-      duration: 5
+      duration: 3
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: -548002632
@@ -2286,7 +2558,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 1673200717
@@ -2303,10 +2577,12 @@ MonoBehaviour:
 
 
         (Blood splash sound)'
-      duration: 5
+      duration: 4
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 727138199
@@ -2326,7 +2602,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2383,9 +2661,11 @@ MonoBehaviour:
 
         We''ve reached the last stage of this research.'
       duration: 5
-      autoNext: 0
+      autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2405,7 +2685,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2415,8 +2697,20 @@ MonoBehaviour:
         Path: 
       eventToTrigger:
         m_PersistentCalls:
-          m_Calls: []
-      triggerDelay: 0
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: d79077848d7dd8b4ab938bee42a5f8ab, type: 2}
+            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
+            m_MethodName: Invoke
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      triggerDelay: 2
     - author: 1
       text: 'Input Noted
 
@@ -2425,7 +2719,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 1
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2442,7 +2738,9 @@ MonoBehaviour:
       duration: 5
       autoNext: 0
       isJoke: 0
+      laughDelay: 0
       shutDownMonitor: 0
+      playAISound: 0
       audioEvent:
         Guid:
           Data1: 0
@@ -2452,8 +2750,20 @@ MonoBehaviour:
         Path: 
       eventToTrigger:
         m_PersistentCalls:
-          m_Calls: []
-      triggerDelay: 0
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 881ce7074b96ccd47b76ed7e2cce8328, type: 2}
+            m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
+            m_MethodName: Invoke
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      triggerDelay: 4
 --- !u!1 &7430764090889563588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,4 +2823,64 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Dead end
           m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &7582056848573978850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8370632315987613761}
+  - component: {fileID: 5028929867988885377}
+  m_Layer: 0
+  m_Name: EnableMovement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8370632315987613761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582056848573978850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8402065760484159302}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5028929867988885377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582056848573978850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7390eaa19e0a39439874f218c353891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 2cac0fe62f8914340bf508c984cee907, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: Enter maze
+          m_BoolArgument: 1
         m_CallState: 2

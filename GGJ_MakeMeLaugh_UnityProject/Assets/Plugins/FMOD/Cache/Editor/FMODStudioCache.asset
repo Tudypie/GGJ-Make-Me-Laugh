@@ -531,6 +531,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1478
+--- !u!114 &-5542268479629746388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/narratording
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/narratording
+  Guid:
+    Data1: -1710269729
+    Data2: 1156605639
+    Data3: 255755157
+    Data4: -1273062932
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27456
 --- !u!114 &-5324113462830487375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,34 +615,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5851
---- !u!114 &-3750055986033614678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/narrator_dying
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/narrator_dying
-  Guid:
-    Data1: -131759820
-    Data2: 1080380484
-    Data3: 898572472
-    Data4: -1823102713
-  Banks:
-  - {fileID: 6747982855619543671}
-  - {fileID: 8881565234032998584}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 27456
 --- !u!114 &-3458309823797855781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +839,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5381
+--- !u!114 &-1249730381384853596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/monitor_beeps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/monitor_beeps
+  Guid:
+    Data1: -1777029957
+    Data2: 1133113569
+    Data3: 2093623435
+    Data4: 206670775
+  Banks:
+  - {fileID: 6747982855619543671}
+  - {fileID: 8881565234032998584}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 670
 --- !u!114 &-1116298541700880603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,10 +938,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638420545358128136
+  lastModified: 638420621341794895
   FileSizes:
   - Name: Desktop
-    Value: 5006
+    Value: 5048
   Exists: 1
 --- !u!114 &-600976397687980955
 MonoBehaviour:
@@ -1149,13 +1177,14 @@ MonoBehaviour:
   - {fileID: -6291415020208367052}
   - {fileID: 482358265157367446}
   - {fileID: 8763074106671439058}
-  - {fileID: -3750055986033614678}
+  - {fileID: -5542268479629746388}
+  - {fileID: -1249730381384853596}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6747982855619543671}
   StringsBanks:
   - {fileID: -640988751806318771}
-  cacheTime: 638420545358537584
+  cacheTime: 638420621342281374
   cacheVersion: 131616
 --- !u!114 &123577656487502292
 MonoBehaviour:
@@ -1948,10 +1977,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638420545358097980
+  lastModified: 638420621341764997
   FileSizes:
   - Name: Desktop
-    Value: 6857696
+    Value: 6883488
   Exists: 1
 --- !u!114 &6754669109467004922
 MonoBehaviour:
@@ -2296,10 +2325,10 @@ MonoBehaviour:
   Path: ../GGJ_MakeMeLaugh_FMOD_Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638420545358537584
+  lastModified: 638420621342281374
   FileSizes:
   - Name: Desktop
-    Value: 599392
+    Value: 625216
   Exists: 1
 --- !u!114 &9074305147904866416
 MonoBehaviour:

@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Narrator
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d1a9bf6c6adf534e93a53677ea68334,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -429,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 265381093}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.9297476, y: -4.3477345, z: -174.6875}
+  m_LocalPosition: {x: -7.9297476, y: -4.347734, z: -166.6871}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1830,6 +1835,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1421931768}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a500a299b8007f540a76603cf2e51bf2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1421931769}
   m_SourcePrefab: {fileID: 100100000, guid: a500a299b8007f540a76603cf2e51bf2, type: 3}
 --- !u!4 &1351684545 stripped
 Transform:
@@ -1915,6 +1924,37 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: a500a299b8007f540a76603cf2e51bf2, type: 3}
+--- !u!114 &1421931769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421931764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -797373136
+      Data2: 1131474635
+      Data3: 380059829
+      Data4: 944459261
+    Path: event:/Ambient/white_room_dark
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1506125900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1997,6 +2037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BloodPuddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9eab96ae68bfd2d4eb9175420429b11e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9eab96ae68bfd2d4eb9175420429b11e,
         type: 3}
@@ -2574,11 +2619,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -131759820
-      Data2: 1080380484
-      Data3: 898572472
-      Data4: -1823102713
-    Path: event:/SFX/narrator_dying
+      Data1: -1710269729
+      Data2: 1156605639
+      Data3: 255755157
+      Data4: -1273062932
+    Path: event:/SFX/narratording
   Event: 
   PlayEvent: 1
   StopEvent: 0

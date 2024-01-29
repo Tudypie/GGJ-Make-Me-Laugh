@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{d2945611-e414-4970-805a-e655bafae0e0}">
+		<property name="assetPath">
+			<value>Beeps/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{28a3066e-562a-4e35-9b44-d5d2184ba20d}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -26,7 +26,7 @@ public class SceneManagement : MonoBehaviour
     IEnumerator Restart()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("CreditsScene");
     }
 
     public void LoadScene(string sceneName)

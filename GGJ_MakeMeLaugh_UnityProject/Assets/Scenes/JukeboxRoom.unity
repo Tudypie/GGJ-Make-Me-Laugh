@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: e156420d0ce1a6f4f9cf721fc2a51f58,
+  m_LightingDataAsset: {fileID: 112000002, guid: ff5916212e1edcb4083e3aa799928c44,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 2a4f81f8955575e40adb28ba336dbbd1,
     type: 2}
@@ -2038,12 +2038,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 91358493790604047b35e960eb1b7b6d,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 91358493790604047b35e960eb1b7b6d,
         type: 3}
       propertyPath: m_TagString
-      value: Interactable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2057,10 +2057,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2094292493}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91358493790604047b35e960eb1b7b6d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2094292492}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91358493790604047b35e960eb1b7b6d,
         type: 3}
       insertIndex: -1
@@ -2114,10 +2110,10 @@ MonoBehaviour:
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2094292492}
-        m_TargetAssemblyTypeName: GameJam.Enviroment.Interactable, Assembly-CSharp
-        m_MethodName: SetCanInteract
-        m_Mode: 6
+      - m_Target: {fileID: 2094292494}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2595,63 +2591,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2094292492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094292489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f26e6e6ee925c274385a61e799c0ecd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannotInteractMessage: 
-  interactMessage: to use gramophone
-  canInteract: 0
-  multipleInteractions: 0
-  useScriptableObjectEvent: 0
-  gameEvent: {fileID: 0}
-  unityGameEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2094292491}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: rotateDisc
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2094292494}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 3eefdd86f38f48f43a10fcd981230485, type: 2}
-        m_TargetAssemblyTypeName: GameJam.EventSystem.VoidEvent, Assembly-CSharp
-        m_MethodName: Invoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &2094292493
 BoxCollider:
   m_ObjectHideFlags: 0

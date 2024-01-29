@@ -25,7 +25,9 @@ public class GameSequence : MonoBehaviour
         public float duration;
         public bool autoNext;
         public bool isJoke;
+        public float laughDelay;
         public bool shutDownMonitor;
+        public bool playAISound;
         public EventReference audioEvent;
         public UnityEvent eventToTrigger;
         public float triggerDelay;
@@ -56,7 +58,7 @@ public class GameSequence : MonoBehaviour
     [Header("References")]
     [SerializeField] private TMP_Text subtitlesText;
     [SerializeField] private GameObject blackScreen;
-    private TMP_Text monitorText;
+    [SerializeField] private TMP_Text monitorText;
     [SerializeField] private float typewritterEffectDelay = 0.15f;
     [Space]
     public death[] deaths;
@@ -166,6 +168,7 @@ public class GameSequence : MonoBehaviour
         string currentText;
         for (int i = 0; i < fullText.Length + 1; i++)
         {
+            AudioManager.Instance.PlayAudio(FMODEvents.Instance.monitorBeeps, monitorText.gameObject.transform.position);
             currentText = fullText.Substring(0, i);
             monitorText.text = currentText;
             yield return new WaitForSeconds(typewritterEffectDelay);
@@ -202,11 +205,17 @@ public class GameSequence : MonoBehaviour
                     StartCoroutine(ShowMonitorText(sequences[currentSequenceNum].messages[currentMessageNum].text));
                     if (sequences[currentSequenceNum].messages[currentMessageNum].isJoke)
                     {
-                        Invoke(nameof(PlayLaugh), 3.5f);
+                        Invoke(nameof(PlayLaugh), sequences[currentSequenceNum].messages[currentMessageNum].laughDelay);
                     }
                     if (sequences[currentSequenceNum].messages[currentMessageNum].shutDownMonitor)
                     {
                         Invoke(nameof(ShutDownMonitor), sequences[currentSequenceNum].messages[currentMessageNum].duration);
+                    }
+                    if(sequences[currentSequenceNum].messages[currentMessageNum].playAISound)
+                    {
+                        audioPlayer.Stop();
+                        audioPlayer.EventReference = sequences[currentSequenceNum].messages[currentMessageNum].audioEvent;
+                        audioPlayer.Play();
                     }
                 } 
                 else

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: be816e290a09397479d3a9690a5811bd,
+  m_LightingDataAsset: {fileID: 112000004, guid: ff5916212e1edcb4083e3aa799928c44,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 2a4f81f8955575e40adb28ba336dbbd1,
     type: 2}
@@ -3722,10 +3722,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 1296688795953282819, guid: 019d8fa1c1811034da1a78f22d93cde3,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 503.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296688795953282819, guid: 019d8fa1c1811034da1a78f22d93cde3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296688795953282819, guid: 019d8fa1c1811034da1a78f22d93cde3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0014818
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296688795953282819, guid: 019d8fa1c1811034da1a78f22d93cde3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.6424
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296688795953282819, guid: 019d8fa1c1811034da1a78f22d93cde3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.65004
+      objectReference: {fileID: 0}
     - target: {fileID: 3412667334341286458, guid: 019d8fa1c1811034da1a78f22d93cde3,
         type: 3}
       propertyPath: m_Name
       value: Monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416741436658182386, guid: 019d8fa1c1811034da1a78f22d93cde3,
+        type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

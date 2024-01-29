@@ -26,6 +26,7 @@ namespace GameJam.Audio
         public EventReference spikesUp;
         public EventReference monitorOn;
         public EventReference monitorOff;
+        public EventReference monitorBeeps;
 
         void Awake()
         {
